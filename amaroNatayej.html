@@ -1,0 +1,2240 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="fa">
+    <head>
+        <meta charset="utf-8">
+        
+        <!--bootstrap css-->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        <!--external css-->
+        <link rel="stylesheet" href="resources/css/style.css" type="text/css">
+        
+    </head>
+    <body dir="rtl" class="group-section" >
+
+        <div class="container-fluid body">
+        
+         <div class="row">
+              
+			<div class="col-sm-2">
+                
+                <!--menu start-->
+                <div class="menu">
+                    <div class="title-box">
+                    <p class="title"><span><img src="resources/img/Path%20339.png">جی آی لند <a href="#"><img src="resources/img/notification.png" class="notification"></a><a href="#"><img src="resources/img/power.png" class="log-off"></a> </span></p>
+                        </div>
+                    <ul>
+                      <a href="dashbord.html"><li><img src="resources/img/dashboard.png">داشبورد</li></a>
+                        <a href="amaroNatayej.html"><li class="current"><img src="resources/img/followers.png">آمار و نتایج لیگ ها</li></a>
+
+                        <a href="city-management.html"><li class="city-manage"><img src="resources/img/house.png">مدیریت شهرها</li></a>
+                        <a href="dastebandi.html"><li><img src="resources/img/layers.png">دسته بندی</li></a>
+                        <a href="businessMangement.html"><li><img src="resources/img/pie-chart.png">مدیریت بیزینس مارکت</li></a>
+                        <a href="users.html"><li><img src="resources/img/avatar.png">مدیریت مشتریان</li></a>
+                        <a href="team-management.html"><li><img src="resources/img/group(2).png">مدیریت تیم</li></a>
+                        <a href="mohtava.html"><li><img src="resources/img/book(1).png">مدیریت محتوا</li></a>
+                        <a href="hesabdari.html"><li><img src="resources/img/coin.png">حسابداری</li></a>
+                        <a href="etelaateKarbar.html"><li><img src="resources/img/011-user-2.png">اطلاعات کاربر</li></a>
+                      
+                    
+                    
+                    </ul> 
+                </div>
+           
+             </div>
+             <!--menu end-->
+             
+             <div class="col-sm-10">
+                 <div id="form">
+                      <!--selection buttons start-->
+                     <button class="select-business selection-group">در حال برگزاری</button>
+                     <button class="select-business-list selection-group">آرشیو</button>
+                     
+                     <!--selection buttons end-->
+                     
+                      <!--amare league section start-->
+                    <div class="business">
+                     <p class="lable">آمار لیگ ها</p> 
+                        <div class="row">
+                        <div class="col-sm-3">
+                             <!--league search section start-->
+                            <div class="archive-container">
+                                <h6 class="archive-container-text">لیگ های در حال برگزاری</h6>
+                                
+                               
+                                <div class="search-container business-search archive-search">
+                <form action="/action_page.php">
+                 <input type="text" placeholder="جستجو کنید" name="search" class="search-input business-search-input archive-search-input" autofocus="off" autocomplete="off" >
+      <button type="submit" class="search-btn archive-search-btn"><i class="fa fa-search"></i></button><!-- buttone jostoju-->
+    </form>
+                                </div>
+                                
+                                <button class="league-btn league-btn-current" id="league1">نام لیگ</button>
+                                <button class="league-btn" id="league2">نام لیگ</button>
+                             
+                          </div>
+                            
+                             <!--league search section end-->
+                            
+                            
+                            </div>
+                            
+                            
+                        <div class="col-sm-9">
+                            
+                             <!--filter and search section start-->
+                        <div class="filter-search-section">
+                            <div class="row">
+            <div class="col-sm-6 filter-dsc-container archive-filter-dsc-container">
+         <p class="filter-dsc" >        <img src="resources/img/filter.png" class="filter-logo"> فیلتر کردن بر اساس:</p>
+                <button class="filter-btn">بیزینس</button>
+                <button class="filter-btn" >شهر</button>
+            </div>
+            <div class="col-sm-6">
+                <div class="search-container business-search filter-search">
+                <form action="/action_page.php">
+                 <input type="text" placeholder="جستجو کنید" name="search" class="search-input business-search-input archive-search-input" autofocus="off" autocomplete="off" >
+      <button type="submit" class="search-btn"><i class="fa fa-search"></i></button><!-- buttone jostoju-->
+    </form>
+                  </div>
+            </div>
+          </div>
+        </div>
+                            
+                            <!--filter and search section end-->
+                            <!--first league start-->
+                            <div class="tables-section  league1 league-info league-info-current">
+                                
+                            <div class="tables-section-buttons">
+                            <div class="row">
+                                
+                                <!--league table buttons section start-->
+                                
+                                <div class="col-sm-4">
+                                    <button class="games-button matches-btn">بازیهای انجام شده</button>
+                                </div>
+                                <div class="col-sm-4">
+                                <button class="games-button next-matches-btn">بازیهای آینده</button>
+                                </div>
+                                <div class="col-sm-4">
+                                <button class="games-button tables-btn">جداول گروه‌ها</button>
+                                </div>
+                                
+                                </div>
+                            <!--league table buttons section end-->
+                            
+                            </div>
+                                
+                                <div class="games-section">
+                                    <div class="game">
+                                <div class="row">
+                                    <div class="col-sm-2"></div>
+                                    <div class="col-sm-8">
+                                        
+                                        <!--played games section start-->
+                                    <div class="row games-select">
+                                        
+                                        <select class="form-control form-control-sm form-control-business">
+                                        <option>نتایج مسابقات گروه آ</option>
+                                        
+                                        </select>
+                                        
+                                          <p class="games-date">۹۷/۶/۱۰ - ۹۷/۱۰/۱۰</p>
+                                        </div>
+                                        
+                                        <div class="games">
+                                        <table>
+                                            <tr>
+                                                <td> <button class="filter-btn">گروه آ</button></td>
+                                            <td>دانشگاه تبریز</td>
+                                            <td>3</td>
+                                            <td>-</td>
+                                            <td>3</td>
+                                            <td>دانشگاه تهران</td>
+                                            <td> 97/10/6</td>
+                                            </tr>
+                                            
+                                            <tr>
+                                          <td> <button class="filter-btn">گروه آ</button></td>
+                                            <td>دانشگاه تبریز</td>
+                                            <td>3</td>
+                                            <td>-</td>
+                                            <td>3</td>
+                                            <td>دانشگاه تهران</td>
+                                            <td> 97/10/6</td>
+                                            </tr>
+                                            <tr>
+                                             <td> <button class="filter-btn">گروه ب</button></td>
+                                            <td>دانشگاه تبریز</td>
+                                            <td>3</td>
+                                            <td>-</td>
+                                            <td>3</td>
+                                            <td>دانشگاه تهران</td>
+                                            <td> 97/10/6</td>
+                                            </tr>
+                                            <tr>
+                                            <td> <button class="filter-btn">گروه ب</button></td>
+                                            <td>دانشگاه تبریز</td>
+                                            <td>3</td>
+                                            <td>-</td>
+                                            <td>3</td>
+                                            <td>دانشگاه تهران</td>
+                                            <td> 97/10/6</td>
+                                            </tr>
+                                            <tr>
+                                            <td> <button class="filter-btn">گروه س</button></td>
+                                            <td>دانشگاه تبریز</td>
+                                            <td>3</td>
+                                            <td>-</td>
+                                            <td>3</td>
+                                            <td>دانشگاه تهران</td>
+                                            <td> 97/10/6</td>
+                                            </tr>
+                                            <tr>
+                                             <td> <button class="filter-btn">گروه س</button></td>
+                                            <td>دانشگاه تبریز</td>
+                                            <td>3</td>
+                                            <td>-</td>
+                                            <td>3</td>
+                                            <td>دانشگاه تهران</td>
+                                            <td> 97/10/6</td>
+                                            </tr>
+                                            <tr>
+                                             <td> <button class="filter-btn">گروه د</button></td>
+                                            <td>دانشگاه تبریز</td>
+                                            <td>3</td>
+                                            <td>-</td>
+                                            <td>3</td>
+                                            <td>دانشگاه تهران</td>
+                                            <td> 97/10/6</td>
+                                            </tr>
+                                          
+                                            
+                                            </table>
+                                        
+                                        </div>
+                                    
+                                    
+                                    </div>
+                                    <!--played games section end-->
+                                   
+
+                                    </div>
+                                    <div class="col-sm-2"></div>
+                                    
+                                    
+                                    
+                                    </div>
+                                    <!--group tables section start-->
+                                     <div class="table-section">
+                                    
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="games-table">
+                                                <h6>گروه آ</h6> <!--group a-->
+                                                <div class="match-table">
+                                        <table>
+                                                      <tr>
+                                              <th scope="col"  class="table-head"></th>  
+                                              <th scope="col"  class="table-head">بازی</th>  
+                                              <th scope="col"  class="table-head">برد</th>  
+                                              <th scope="col"  class="table-head">مساوی</th>  
+                                              <th scope="col"  class="table-head">باخت</th>  
+                                              <th scope="col"  class="table-head">گل ز</th>  
+                                              <th scope="col"  class="table-head">گل خ</th>  
+                                              <th scope="col"  class="table-head">تفاضل</th>  
+                                              <th scope="col"  class="table-head">امتیاز</th>  
+                                            </tr>
+                                            <tr>
+                                            <td>دانشگاه تبریز</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            </tr>
+                                            <tr>
+                                            <td>دانشگاه تبریز</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            </tr>
+                                               <tr>
+                                             <td>دانشگاه تبریز</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            </tr>
+                                                <tr>
+                                                 <td>دانشگاه تبریز</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            </tr>
+                                           
+                                            
+                                            </table>
+                                                </div>
+                                                    <h6>گروه آ</h6><!--group b-->
+                                                <div class="match-table">
+                                        <table>
+                                                      <tr>
+                                              <th scope="col"  class="table-head"></th>  
+                                              <th scope="col"  class="table-head">بازی</th>  
+                                              <th scope="col"  class="table-head">برد</th>  
+                                              <th scope="col"  class="table-head">مساوی</th>  
+                                              <th scope="col"  class="table-head">باخت</th>  
+                                              <th scope="col"  class="table-head">گل ز</th>  
+                                              <th scope="col"  class="table-head">گل خ</th>  
+                                              <th scope="col"  class="table-head">تفاضل</th>  
+                                              <th scope="col"  class="table-head">امتیاز</th>  
+                                            </tr>
+                                       <tr>
+                                               <td>دانشگاه تبریز</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            </tr>
+                                            <tr>
+                                                <td>دانشگاه تبریز</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            </tr>
+                                            <tr>
+                                             <td>دانشگاه تبریز</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            </tr>
+                                            <tr>
+                                             <td>دانشگاه تبریز</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            </tr>
+                                            </table>
+                                        </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <h6>گروه ب</h6><!--group c-->
+                                            <div class="match-table match-table2">
+                                                
+                                                
+                                              <table>
+                                                      <tr>
+                                              <th scope="col"  class="table-head"></th>  
+                                              <th scope="col"  class="table-head">بازی</th>  
+                                              <th scope="col"  class="table-head">برد</th>  
+                                              <th scope="col"  class="table-head">مساوی</th>  
+                                              <th scope="col"  class="table-head">باخت</th>  
+                                              <th scope="col"  class="table-head">گل ز</th>  
+                                              <th scope="col"  class="table-head">گل خ</th>  
+                                              <th scope="col"  class="table-head">تفاضل</th>  
+                                              <th scope="col"  class="table-head">امتیاز</th>  
+                                            </tr>
+                                          
+                                          
+                                            <tr>
+                                               <td>دانشگاه تبریز</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            </tr>
+                                            <tr>
+                                                <td>دانشگاه تبریز</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            </tr>
+                                            <tr>
+                                             <td>دانشگاه تبریز</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            </tr>
+                                            <tr>
+                                             <td>دانشگاه تبریز</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            </tr>
+                                            </table>
+                                            </div>
+                                            <h6>گروه ب</h6><!--group d-->
+                                            <div class="match-table match-table2">
+                                              <table>
+                                                      <tr>
+                                              <th scope="col"  class="table-head"></th>  
+                                              <th scope="col"  class="table-head">بازی</th>  
+                                              <th scope="col"  class="table-head">برد</th>  
+                                              <th scope="col"  class="table-head">مساوی</th>  
+                                              <th scope="col"  class="table-head">باخت</th>  
+                                              <th scope="col"  class="table-head">گل ز</th>  
+                                              <th scope="col"  class="table-head">گل خ</th>  
+                                              <th scope="col"  class="table-head">تفاضل</th>  
+                                              <th scope="col"  class="table-head">امتیاز</th>  
+                                            </tr>
+                                          
+                                         
+                                            <tr>
+                                               <td>دانشگاه تبریز</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            </tr>
+                                            <tr>
+                                                <td>دانشگاه تبریز</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            </tr>
+                                            <tr>
+                                             <td>دانشگاه تبریز</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            </tr>
+                                            <tr>
+                                             <td>دانشگاه تبریز</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            </tr>
+                                            </table>
+                                            </div>
+                                        </div>
+                                        </div>
+                                        </div>
+                                    
+                                    <!--group tables section end-->
+                                    
+                                    <!--next games section start-->
+                                    <div class="next-game">
+                                         <div class="row">
+                                    <div class="col-sm-2"></div>
+                                    <div class="col-sm-8">
+                                        
+                                        
+                                    <div class="row games-select">
+                                        
+                                        <select class="form-control form-control-sm form-control-business">
+                                        <option>نتایج مسابقات گروه آ</option>
+                                        
+                                        </select>
+                                        
+                                          <p class="games-date">۹۷/۶/۱۰ - ۹۷/۱۰/۱۰</p>
+                                        </div>
+                                        
+                                        <div class="games">
+                                        <table>
+                                            <tr>
+                                                <td> <button class="filter-btn">گروه آ</button></td>
+                                            <td>دانشگاه تبریز</td>
+                                            <td>3</td>
+                                            <td>-</td>
+                                            <td>3</td>
+                                            <td>دانشگاه تهران</td>
+                                            <td> 97/10/6</td>
+                                            </tr>
+                                            
+                                            <tr>
+                                          <td> <button class="filter-btn">گروه آ</button></td>
+                                            <td>دانشگاه تبریز</td>
+                                            <td>3</td>
+                                            <td>-</td>
+                                            <td>3</td>
+                                            <td>دانشگاه تهران</td>
+                                            <td> 97/10/6</td>
+                                            </tr>
+                                            <tr>
+                                             <td> <button class="filter-btn">گروه ب</button></td>
+                                            <td>دانشگاه تبریز</td>
+                                            <td>3</td>
+                                            <td>-</td>
+                                            <td>3</td>
+                                            <td>دانشگاه تهران</td>
+                                            <td> 97/10/6</td>
+                                            </tr>
+                                            <tr>
+                                            <td> <button class="filter-btn">گروه ب</button></td>
+                                            <td>دانشگاه تبریز</td>
+                                            <td>3</td>
+                                            <td>-</td>
+                                            <td>3</td>
+                                            <td>دانشگاه تهران</td>
+                                            <td> 97/10/6</td>
+                                            </tr>
+                                            <tr>
+                                            <td> <button class="filter-btn">گروه س</button></td>
+                                            <td>دانشگاه تبریز</td>
+                                            <td>3</td>
+                                            <td>-</td>
+                                            <td>3</td>
+                                            <td>دانشگاه تهران</td>
+                                            <td> 97/10/6</td>
+                                            </tr>
+                                            <tr>
+                                             <td> <button class="filter-btn">گروه س</button></td>
+                                            <td>دانشگاه تبریز</td>
+                                            <td>3</td>
+                                            <td>-</td>
+                                            <td>3</td>
+                                            <td>دانشگاه تهران</td>
+                                            <td> 97/10/6</td>
+                                            </tr>
+                                            <tr>
+                                             <td> <button class="filter-btn">گروه د</button></td>
+                                            <td>دانشگاه تبریز</td>
+                                            <td>3</td>
+                                            <td>-</td>
+                                            <td>3</td>
+                                            <td>دانشگاه تهران</td>
+                                            <td> 97/10/6</td>
+                                            </tr>
+                                          
+                                            
+                                            </table>
+                                        
+                                        </div>
+                                    
+                                    
+                                    </div>
+                                    
+                                   
+
+                                    </div>
+                                        
+                                    </div>
+                                    
+                                    <!--next games section end-->
+                                    
+                                    
+                                                                        </div>
+                                </div>
+                            <!--first league end-->
+                            
+                           
+                            
+                            <!--second league start-->
+                            <div class="tables-section  league2 league-info">
+                            <div class="tables-section-buttons">
+                            <div class="row">
+                                <!--league table buttons section start-->
+                                
+                                <div class="col-sm-4">
+                                    <button class="games-button matches-btn">بازیهای انجام شده</button>
+                                </div>
+                                <div class="col-sm-4">
+                                <button class="games-button next-matches-btn">بازیهای آینده</button>
+                                </div>
+                                <div class="col-sm-4">
+                                <button class="games-button tables-btn">جداول گروه‌ها</button>
+                                </div>
+                                
+                                </div>
+                            <!--league table buttons section end-->
+                            
+                            </div>
+                                
+                                <div class="games-section">
+                                    <div class="game">
+                                         <!--played games section start-->
+                                        
+                                <div class="row">
+                                    <div class="col-sm-2"></div>
+                                    <div class="col-sm-8">
+                                        
+                                        
+                                    <div class="row games-select">
+                                        
+                                        <select class="form-control form-control-sm form-control-business">
+                                        <option>نتایج مسابقات گروه آ</option>
+                                        
+                                        </select>
+                                        
+                                          <p class="games-date">۹۷/۶/۱۰ - ۹۷/۱۰/۱۰</p>
+                                        </div>
+                                        
+                                        <div class="games">
+                                        <table>
+                                            <tr>
+                                                <td> <button class="filter-btn">گروه آ</button></td>
+                                            <td>دانشگاه تهران</td>
+                                            <td>3</td>
+                                            <td>-</td>
+                                            <td>3</td>
+                                            <td>دانشگاه تهران</td>
+                                            <td> 97/10/6</td>
+                                            </tr>
+                                            
+                                            <tr>
+                                          <td> <button class="filter-btn">گروه آ</button></td>
+                                            <td>دانشگاه تبریز</td>
+                                            <td>3</td>
+                                            <td>-</td>
+                                            <td>3</td>
+                                            <td>دانشگاه تهران</td>
+                                            <td> 97/10/6</td>
+                                            </tr>
+                                            <tr>
+                                             <td> <button class="filter-btn">گروه ب</button></td>
+                                            <td>دانشگاه تبریز</td>
+                                            <td>3</td>
+                                            <td>-</td>
+                                            <td>3</td>
+                                            <td>دانشگاه تهران</td>
+                                            <td> 97/10/6</td>
+                                            </tr>
+                                            <tr>
+                                            <td> <button class="filter-btn">گروه ب</button></td>
+                                            <td>دانشگاه تبریز</td>
+                                            <td>3</td>
+                                            <td>-</td>
+                                            <td>3</td>
+                                            <td>دانشگاه تهران</td>
+                                            <td> 97/10/6</td>
+                                            </tr>
+                                            <tr>
+                                            <td> <button class="filter-btn">گروه س</button></td>
+                                            <td>دانشگاه تبریز</td>
+                                            <td>3</td>
+                                            <td>-</td>
+                                            <td>3</td>
+                                            <td>دانشگاه تهران</td>
+                                            <td> 97/10/6</td>
+                                            </tr>
+                                            <tr>
+                                             <td> <button class="filter-btn">گروه س</button></td>
+                                            <td>دانشگاه تبریز</td>
+                                            <td>3</td>
+                                            <td>-</td>
+                                            <td>3</td>
+                                            <td>دانشگاه تهران</td>
+                                            <td> 97/10/6</td>
+                                            </tr>
+                                            <tr>
+                                             <td> <button class="filter-btn">گروه د</button></td>
+                                            <td>دانشگاه تبریز</td>
+                                            <td>3</td>
+                                            <td>-</td>
+                                            <td>3</td>
+                                            <td>دانشگاه تهران</td>
+                                            <td> 97/10/6</td>
+                                            </tr>
+                                          
+                                            
+                                            </table>
+                                        
+                                        </div>
+                                    
+                                    
+                                    </div>
+                                    
+                                   
+
+                                    </div>
+                                         <!--played games section end-->
+                                        
+                                    <div class="col-sm-2"></div>
+                                    
+                                    
+                                    
+                                    </div>
+                                    <!--group tables section start-->
+                                     <div class="table-section">
+                                    
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="games-table">
+                                                <h6>گروه آ</h6>
+                                                <div class="match-table">
+                                        <table>
+                                                      <tr>
+                                              <th scope="col"  class="table-head"></th>  
+                                              <th scope="col"  class="table-head">بازی</th>  
+                                              <th scope="col"  class="table-head">برد</th>  
+                                              <th scope="col"  class="table-head">مساوی</th>  
+                                              <th scope="col"  class="table-head">باخت</th>  
+                                              <th scope="col"  class="table-head">گل ز</th>  
+                                              <th scope="col"  class="table-head">گل خ</th>  
+                                              <th scope="col"  class="table-head">تفاضل</th>  
+                                              <th scope="col"  class="table-head">امتیاز</th>  
+                                            </tr>
+                                            <tr>
+                                            <td>دانشگاه تبریز</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            </tr>
+                                            <tr>
+                                            <td>دانشگاه تبریز</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            </tr>
+                                               <tr>
+                                             <td>دانشگاه تبریز</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            </tr>
+                                                <tr>
+                                                 <td>دانشگاه تبریز</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            </tr>
+                                           
+                                            
+                                            </table>
+                                                </div>
+                                                    <h6>گروه آ</h6>
+                                                <div class="match-table">
+                                        <table>
+                                                      <tr>
+                                              <th scope="col"  class="table-head"></th>  
+                                              <th scope="col"  class="table-head">بازی</th>  
+                                              <th scope="col"  class="table-head">برد</th>  
+                                              <th scope="col"  class="table-head">مساوی</th>  
+                                              <th scope="col"  class="table-head">باخت</th>  
+                                              <th scope="col"  class="table-head">گل ز</th>  
+                                              <th scope="col"  class="table-head">گل خ</th>  
+                                              <th scope="col"  class="table-head">تفاضل</th>  
+                                              <th scope="col"  class="table-head">امتیاز</th>  
+                                            </tr>
+                                       <tr>
+                                               <td>دانشگاه تبریز</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            </tr>
+                                            <tr>
+                                                <td>دانشگاه تبریز</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            </tr>
+                                            <tr>
+                                             <td>دانشگاه تبریز</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            </tr>
+                                            <tr>
+                                             <td>دانشگاه تبریز</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            </tr>
+                                            </table>
+                                        </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <h6>گروه ب</h6>
+                                            <div class="match-table match-table2">
+                                                
+                                                
+                                              <table>
+                                                      <tr>
+                                              <th scope="col"  class="table-head"></th>  
+                                              <th scope="col"  class="table-head">بازی</th>  
+                                              <th scope="col"  class="table-head">برد</th>  
+                                              <th scope="col"  class="table-head">مساوی</th>  
+                                              <th scope="col"  class="table-head">باخت</th>  
+                                              <th scope="col"  class="table-head">گل ز</th>  
+                                              <th scope="col"  class="table-head">گل خ</th>  
+                                              <th scope="col"  class="table-head">تفاضل</th>  
+                                              <th scope="col"  class="table-head">امتیاز</th>  
+                                            </tr>
+                                          
+                                          
+                                            <tr>
+                                               <td>دانشگاه تبریز</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            </tr>
+                                            <tr>
+                                                <td>دانشگاه تبریز</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            </tr>
+                                            <tr>
+                                             <td>دانشگاه تبریز</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            </tr>
+                                            <tr>
+                                             <td>دانشگاه تبریز</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            </tr>
+                                            </table>
+                                            </div>
+                                            <h6>گروه ب</h6>
+                                            <div class="match-table match-table2">
+                                              <table>
+                                                      <tr>
+                                              <th scope="col"  class="table-head"></th>  
+                                              <th scope="col"  class="table-head">بازی</th>  
+                                              <th scope="col"  class="table-head">برد</th>  
+                                              <th scope="col"  class="table-head">مساوی</th>  
+                                              <th scope="col"  class="table-head">باخت</th>  
+                                              <th scope="col"  class="table-head">گل ز</th>  
+                                              <th scope="col"  class="table-head">گل خ</th>  
+                                              <th scope="col"  class="table-head">تفاضل</th>  
+                                              <th scope="col"  class="table-head">امتیاز</th>  
+                                            </tr>
+                                          
+                                         
+                                            <tr>
+                                               <td>دانشگاه تبریز</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            </tr>
+                                            <tr>
+                                                <td>دانشگاه تبریز</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            </tr>
+                                            <tr>
+                                             <td>دانشگاه تبریز</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            </tr>
+                                            <tr>
+                                             <td>دانشگاه تبریز</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            </tr>
+                                            </table>
+                                            </div>
+                                        </div>
+                                        </div>
+                                        </div>
+                                    <!--group tables section end-->
+                                    
+                                    <!--next games section start-->
+                                    
+                                    <div class="next-game">
+                                        <div class="row">
+                                    <div class="col-sm-2"></div>
+                                    <div class="col-sm-8">
+                                        
+                                        
+                                    <div class="row games-select">
+                                        
+                                        <select class="form-control form-control-sm form-control-business">
+                                        <option>نتایج مسابقات گروه آ</option>
+                                        
+                                        </select>
+                                        
+                                          <p class="games-date">۹۷/۶/۱۰ - ۹۷/۱۰/۱۰</p>
+                                        </div>
+                                        
+                                        <div class="games">
+                                        <table>
+                                            <tr>
+                                                <td> <button class="filter-btn">گروه آ</button></td>
+                                            <td>دانشگاه تبریز</td>
+                                            <td>3</td>
+                                            <td>-</td>
+                                            <td>3</td>
+                                            <td>دانشگاه تهران</td>
+                                            <td> 97/10/6</td>
+                                            </tr>
+                                            
+                                            <tr>
+                                          <td> <button class="filter-btn">گروه آ</button></td>
+                                            <td>دانشگاه تبریز</td>
+                                            <td>3</td>
+                                            <td>-</td>
+                                            <td>3</td>
+                                            <td>دانشگاه تهران</td>
+                                            <td> 97/10/6</td>
+                                            </tr>
+                                            <tr>
+                                             <td> <button class="filter-btn">گروه ب</button></td>
+                                            <td>دانشگاه تبریز</td>
+                                            <td>3</td>
+                                            <td>-</td>
+                                            <td>3</td>
+                                            <td>دانشگاه تهران</td>
+                                            <td> 97/10/6</td>
+                                            </tr>
+                                            <tr>
+                                            <td> <button class="filter-btn">گروه ب</button></td>
+                                            <td>دانشگاه تبریز</td>
+                                            <td>3</td>
+                                            <td>-</td>
+                                            <td>3</td>
+                                            <td>دانشگاه تهران</td>
+                                            <td> 97/10/6</td>
+                                            </tr>
+                                            <tr>
+                                            <td> <button class="filter-btn">گروه س</button></td>
+                                            <td>دانشگاه تبریز</td>
+                                            <td>3</td>
+                                            <td>-</td>
+                                            <td>3</td>
+                                            <td>دانشگاه تهران</td>
+                                            <td> 97/10/6</td>
+                                            </tr>
+                                            <tr>
+                                             <td> <button class="filter-btn">گروه س</button></td>
+                                            <td>دانشگاه تبریز</td>
+                                            <td>3</td>
+                                            <td>-</td>
+                                            <td>3</td>
+                                            <td>دانشگاه تهران</td>
+                                            <td> 97/10/6</td>
+                                            </tr>
+                                            <tr>
+                                             <td> <button class="filter-btn">گروه د</button></td>
+                                            <td>دانشگاه تبریز</td>
+                                            <td>3</td>
+                                            <td>-</td>
+                                            <td>3</td>
+                                            <td>دانشگاه تهران</td>
+                                            <td> 97/10/6</td>
+                                            </tr>
+                                          
+                                            
+                                            </table>
+                                        
+                                        </div>
+                                    
+                                    
+                                    </div>
+                                    
+                                   
+
+                                    </div>
+                                        
+                                    </div>
+                                    
+                                    <!--next games section end-->
+                                         </div>
+                              </div>
+                            
+                                </div>
+        </div>
+                        </div>
+                     <!--amare league section end-->
+                     
+                            </div>
+                 
+                 <!--archive section start-->
+                 
+                    <div class="business-list">
+                   <p class="lable">آمار لیگ ها</p> 
+                        <div class="row">
+                            
+                            <!--archive league search section start-->
+                            
+                        <div class="col-sm-3">
+                            <div class="archive-container">
+                                <h6 class="archive-container-text" style="color: #000">آرشیو</h6>
+                                <div class="search-container business-search archive-search">
+                <form action="/action_page.php">
+                 <input type="text" placeholder="جستجو کنید" name="search" class="search-input business-search-input archive-search-input" autofocus="off" autocomplete="off" >
+      <button type="submit" class="search-btn archive-search-btn"><i class="fa fa-search"></i></button><!-- buttone jostoju-->
+    </form>
+                                </div>
+                                
+                                          <button class="league-btn league-btn-current" id="league1-archive">نام لیگ</button>
+                                <button class="league-btn" id="league2-archive">نام لیگ</button>
+                             
+                          </div>
+                            
+                            
+                            
+                            
+                            </div>
+                            <!--archive league search section end-->
+                            
+                        <div class="col-sm-9">
+                            <!--filter and search section start-->
+                            
+                        <div class="filter-search-section">
+                            <div class="row">
+            <div class="col-sm-6 filter-dsc-container archive-filter-dsc-container">
+         <p class="filter-dsc" >        <img src="resources/img/filter.png" class="filter-logo"> فیلتر کردن بر اساس:</p>
+                <button class="filter-btn">بیزینس</button>
+                <button class="filter-btn" >شهر</button>
+            </div>
+            <div class="col-sm-6">
+                <div class="search-container business-search filter-search">
+                <form action="/action_page.php">
+                 <input type="text" placeholder="جستجو کنید" name="search" class="search-input business-search-input archive-search-input" autofocus="off" autocomplete="off" >
+      <button type="submit" class="search-btn"><i class="fa fa-search"></i></button><!-- buttone jostoju-->
+    </form>
+                  </div>
+            </div>
+          </div>
+        </div>
+                            <!--filter and search section end-->
+                            
+                            <!--archive first league start-->
+                            <div class="tables-section league-info league1-archive league-info-current">
+                            <div class="tables-section-buttons">
+                            <div class="row">
+                                <div class="col-sm-4">
+                                       <!--archive league table buttons section start-->
+                                    
+                                    <button class="games-button  played-games-btn">بازیهای انجام شده</button>
+                                </div>
+                                <div class="col-sm-4">
+                                <button class="games-button  archive-table-btn">جداول گروه‌ها</button>
+                                </div>
+                                <div class="col-sm-4">
+                                <button class="games-button  main-table-btn">رده‌بندی کلی لیگ</button>
+                                </div>
+                                
+                                </div>
+                            <!--archive league table buttons section end-->
+                            
+                            </div>
+                                    <!--archive played games section start-->
+                                
+                                <div class="games-section">
+                                    <div class="plyed-game">
+                                <div class="row">
+                                    <div class="col-sm-2"></div>
+                                    <div class="col-sm-8">
+                                        
+                                        
+                                    <div class="row games-select">
+                                        
+                                        <select class="form-control form-control-sm form-control-business">
+                                        <option>نتایج مسابقات گروه آ</option>
+                                        
+                                        </select>
+                                        
+                                          <p class="games-date">۹۷/۶/۱۰ - ۹۷/۱۰/۱۰</p>
+                                        </div>
+                                        
+                                        <div class="games">
+                                        <table>
+                                            <tr>
+                                                <td> <button class="filter-btn">گروه آ</button></td>
+                                            <td>دانشگاه تبریز</td>
+                                            <td>3</td>
+                                            <td>-</td>
+                                            <td>3</td>
+                                            <td>دانشگاه تهران</td>
+                                            <td> 97/10/6</td>
+                                            </tr>
+                                            
+                                            <tr>
+                                          <td> <button class="filter-btn">گروه آ</button></td>
+                                            <td>دانشگاه تبریز</td>
+                                            <td>3</td>
+                                            <td>-</td>
+                                            <td>3</td>
+                                            <td>دانشگاه تهران</td>
+                                            <td> 97/10/6</td>
+                                            </tr>
+                                            <tr>
+                                             <td> <button class="filter-btn">گروه ب</button></td>
+                                            <td>دانشگاه تبریز</td>
+                                            <td>3</td>
+                                            <td>-</td>
+                                            <td>3</td>
+                                            <td>دانشگاه تهران</td>
+                                            <td> 97/10/6</td>
+                                            </tr>
+                                            <tr>
+                                            <td> <button class="filter-btn">گروه ب</button></td>
+                                            <td>دانشگاه تبریز</td>
+                                            <td>3</td>
+                                            <td>-</td>
+                                            <td>3</td>
+                                            <td>دانشگاه تهران</td>
+                                            <td> 97/10/6</td>
+                                            </tr>
+                                            <tr>
+                                            <td> <button class="filter-btn">گروه س</button></td>
+                                            <td>دانشگاه تبریز</td>
+                                            <td>3</td>
+                                            <td>-</td>
+                                            <td>3</td>
+                                            <td>دانشگاه تهران</td>
+                                            <td> 97/10/6</td>
+                                            </tr>
+                                            <tr>
+                                             <td> <button class="filter-btn">گروه س</button></td>
+                                            <td>دانشگاه تبریز</td>
+                                            <td>3</td>
+                                            <td>-</td>
+                                            <td>3</td>
+                                            <td>دانشگاه تهران</td>
+                                            <td> 97/10/6</td>
+                                            </tr>
+                                            <tr>
+                                             <td> <button class="filter-btn">گروه د</button></td>
+                                            <td>دانشگاه تبریز</td>
+                                            <td>3</td>
+                                            <td>-</td>
+                                            <td>3</td>
+                                            <td>دانشگاه تهران</td>
+                                            <td> 97/10/6</td>
+                                            </tr>
+                                          
+                                            
+                                            </table>
+                                        
+                                        </div>
+                                    
+                                    
+                                    </div>
+                                    
+                                   
+
+                                    </div>
+                                    <div class="col-sm-2"></div>
+                                    
+                                    
+                                    
+                                    </div>
+                                    
+                                     <!--archive played games section end-->
+                                    
+                                     <div class="archive-table-section">
+                                    <!--archive group tables section start-->
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="games-table">
+                                                <h6>گروه آ</h6>
+                                                <div class="match-table">
+                                        <table>
+                                                      <tr>
+                                              <th scope="col"  class="table-head"></th>  
+                                              <th scope="col"  class="table-head">بازی</th>  
+                                              <th scope="col"  class="table-head">برد</th>  
+                                              <th scope="col"  class="table-head">مساوی</th>  
+                                              <th scope="col"  class="table-head">باخت</th>  
+                                              <th scope="col"  class="table-head">گل ز</th>  
+                                              <th scope="col"  class="table-head">گل خ</th>  
+                                              <th scope="col"  class="table-head">تفاضل</th>  
+                                              <th scope="col"  class="table-head">امتیاز</th>  
+                                            </tr>
+                                            <tr>
+                                            <td>دانشگاه تبریز</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            </tr>
+                                            <tr>
+                                            <td>دانشگاه تبریز</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            </tr>
+                                               <tr>
+                                             <td>دانشگاه تبریز</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            </tr>
+                                                <tr>
+                                                 <td>دانشگاه تبریز</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            </tr>
+                                           
+                                            
+                                            </table>
+                                                </div>
+                                                    <h6>گروه آ</h6>
+                                                <div class="match-table">
+                                        <table>
+                                                      <tr>
+                                              <th scope="col"  class="table-head"></th>  
+                                              <th scope="col"  class="table-head">بازی</th>  
+                                              <th scope="col"  class="table-head">برد</th>  
+                                              <th scope="col"  class="table-head">مساوی</th>  
+                                              <th scope="col"  class="table-head">باخت</th>  
+                                              <th scope="col"  class="table-head">گل ز</th>  
+                                              <th scope="col"  class="table-head">گل خ</th>  
+                                              <th scope="col"  class="table-head">تفاضل</th>  
+                                              <th scope="col"  class="table-head">امتیاز</th>  
+                                            </tr>
+                                       <tr>
+                                               <td>دانشگاه تبریز</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            </tr>
+                                            <tr>
+                                                <td>دانشگاه تبریز</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            </tr>
+                                            <tr>
+                                             <td>دانشگاه تبریز</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            </tr>
+                                            <tr>
+                                             <td>دانشگاه تبریز</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            </tr>
+                                            </table>
+                                        </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <h6>گروه ب</h6>
+                                            <div class="match-table match-table2">
+                                                
+                                                
+                                              <table>
+                                                      <tr>
+                                              <th scope="col"  class="table-head"></th>  
+                                              <th scope="col"  class="table-head">بازی</th>  
+                                              <th scope="col"  class="table-head">برد</th>  
+                                              <th scope="col"  class="table-head">مساوی</th>  
+                                              <th scope="col"  class="table-head">باخت</th>  
+                                              <th scope="col"  class="table-head">گل ز</th>  
+                                              <th scope="col"  class="table-head">گل خ</th>  
+                                              <th scope="col"  class="table-head">تفاضل</th>  
+                                              <th scope="col"  class="table-head">امتیاز</th>  
+                                            </tr>
+                                          
+                                          
+                                            <tr>
+                                               <td>دانشگاه تبریز</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            </tr>
+                                            <tr>
+                                                <td>دانشگاه تبریز</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            </tr>
+                                            <tr>
+                                             <td>دانشگاه تبریز</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            </tr>
+                                            <tr>
+                                             <td>دانشگاه تبریز</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            </tr>
+                                            </table>
+                                            </div>
+                                            <h6>گروه ب</h6>
+                                            <div class="match-table match-table2">
+                                              <table>
+                                                      <tr>
+                                              <th scope="col"  class="table-head"></th>  
+                                              <th scope="col"  class="table-head">بازی</th>  
+                                              <th scope="col"  class="table-head">برد</th>  
+                                              <th scope="col"  class="table-head">مساوی</th>  
+                                              <th scope="col"  class="table-head">باخت</th>  
+                                              <th scope="col"  class="table-head">گل ز</th>  
+                                              <th scope="col"  class="table-head">گل خ</th>  
+                                              <th scope="col"  class="table-head">تفاضل</th>  
+                                              <th scope="col"  class="table-head">امتیاز</th>  
+                                            </tr>
+                                          
+                                         
+                                            <tr>
+                                               <td>دانشگاه تبریز</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            </tr>
+                                            <tr>
+                                                <td>دانشگاه تبریز</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            </tr>
+                                            <tr>
+                                             <td>دانشگاه تبریز</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            </tr>
+                                            <tr>
+                                             <td>دانشگاه تبریز</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            </tr>
+                                            </table>
+                                            </div>
+                                        </div>
+                                        </div>
+                                        </div>
+                                     <!--archive group tables section end-->
+                                    
+                                    <div class="main-table-section">
+                                         <!--archive main table section start-->
+                                        <div class="row">
+                                        <div class="col-sm-1"></div>
+                                        <div class="col-sm-10">
+                                            <h6 style="text-align: right">۹۷/۶/۱۰ - ۹۷/۱۰/۱۰</h6>
+                                         <table>
+                                              <tr>
+                                              <th scope="col"  class="table-head"></th>  
+                                              <th scope="col"  class="table-head"></th>  
+                                              <th scope="col"  class="table-head">بازی</th>  
+                                              <th scope="col"  class="table-head">برد</th>  
+                                              <th scope="col"  class="table-head">مساوی</th>  
+                                              <th scope="col"  class="table-head">باخت</th>  
+                                              <th scope="col"  class="table-head">گل ز</th>  
+                                              <th scope="col"  class="table-head">گل خ</th>  
+                                              <th scope="col"  class="table-head">تفاضل</th>  
+                                              <th scope="col"  class="table-head">امتیاز</th>  
+                                            </tr>
+                                             
+                                               <tr>
+                                             <td>1</td>
+                                             <td>دانشگاه تبریز</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            </tr>
+                                                  <tr>
+                                             <td>1</td>
+                                             <td>دانشگاه تبریز</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            </tr>
+                                                  <tr>
+                                             <td>2</td>
+                                             <td>دانشگاه تبریز</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            </tr>
+                                                  <tr>
+                                             <td>3</td>
+                                             <td>دانشگاه تبریز</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            </tr>
+                                                  <tr>
+                                             <td>4</td>
+                                             <td>دانشگاه تبریز</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            </tr>
+                                                  <tr>
+                                             <td>5</td>
+                                             <td>دانشگاه تبریز</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            </tr>
+                                                  <tr>
+                                             <td>6</td>
+                                             <td>دانشگاه تبریز</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            </tr>
+                                                  <tr>
+                                             <td>7</td>
+                                             <td>دانشگاه تبریز</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            </tr>
+                                                  <tr>
+                                             <td>8</td>
+                                             <td>دانشگاه تبریز</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            </tr>
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            </table>
+                                            
+                                            </div>
+                                        <div class="col-sm-1"></div>
+                                        
+                                        
+                                        </div>
+                                        
+                                    </div>
+                                    <!--archive main table section end-->
+                                    
+                                    
+                                    
+                                    
+                                                                        </div>
+                                </div>
+                            <!--archive first league end-->
+                            
+                            <!--archive second league start-->
+                            <div class="tables-section league-info league2-archive">
+                            <div class="tables-section-buttons">
+                            <div class="row">
+                                
+                                <!--archive league table buttons section start-->
+                                <div class="col-sm-4">
+                                    <button class="games-button  played-games-btn">بازیهای انجام شده</button>
+                                </div>
+                                <div class="col-sm-4">
+                                <button class="games-button  archive-table-btn">جداول گروه‌ها</button>
+                                </div>
+                                <div class="col-sm-4">
+                                <button class="games-button  main-table-btn">رده‌بندی کلی لیگ</button>
+                                </div>
+                                
+                                </div>
+                            <!--archive league table buttons section end-->
+                            
+                            </div>
+                                <!--archive league played games section start-->
+                                <div class="games-section">
+                                    <div class="plyed-game">
+                                <div class="row">
+                                    <div class="col-sm-2"></div>
+                                    <div class="col-sm-8">
+                                        
+                                        
+                                    <div class="row games-select">
+                                        
+                                        <select class="form-control form-control-sm form-control-business">
+                                        <option>نتایج مسابقات گروه آ</option>
+                                        
+                                        </select>
+                                        
+                                          <p class="games-date">۹۷/۶/۱۰ - ۹۷/۱۰/۱۰</p>
+                                        </div>
+                                        
+                                        <div class="games">
+                                        <table>
+                                            <tr>
+                                                <td> <button class="filter-btn">گروه آ</button></td>
+                                            <td>دانشگاه سمنان</td>
+                                            <td>3</td>
+                                            <td>-</td>
+                                            <td>3</td>
+                                            <td>دانشگاه تهران</td>
+                                            <td> 97/10/6</td>
+                                            </tr>
+                                            
+                                            <tr>
+                                          <td> <button class="filter-btn">گروه آ</button></td>
+                                            <td>دانشگاه تبریز</td>
+                                            <td>3</td>
+                                            <td>-</td>
+                                            <td>3</td>
+                                            <td>دانشگاه تهران</td>
+                                            <td> 97/10/6</td>
+                                            </tr>
+                                            <tr>
+                                             <td> <button class="filter-btn">گروه ب</button></td>
+                                            <td>دانشگاه تبریز</td>
+                                            <td>3</td>
+                                            <td>-</td>
+                                            <td>3</td>
+                                            <td>دانشگاه تهران</td>
+                                            <td> 97/10/6</td>
+                                            </tr>
+                                            <tr>
+                                            <td> <button class="filter-btn">گروه ب</button></td>
+                                            <td>دانشگاه تبریز</td>
+                                            <td>3</td>
+                                            <td>-</td>
+                                            <td>3</td>
+                                            <td>دانشگاه تهران</td>
+                                            <td> 97/10/6</td>
+                                            </tr>
+                                            <tr>
+                                            <td> <button class="filter-btn">گروه س</button></td>
+                                            <td>دانشگاه تبریز</td>
+                                            <td>3</td>
+                                            <td>-</td>
+                                            <td>3</td>
+                                            <td>دانشگاه تهران</td>
+                                            <td> 97/10/6</td>
+                                            </tr>
+                                            <tr>
+                                             <td> <button class="filter-btn">گروه س</button></td>
+                                            <td>دانشگاه تبریز</td>
+                                            <td>3</td>
+                                            <td>-</td>
+                                            <td>3</td>
+                                            <td>دانشگاه تهران</td>
+                                            <td> 97/10/6</td>
+                                            </tr>
+                                            <tr>
+                                             <td> <button class="filter-btn">گروه د</button></td>
+                                            <td>دانشگاه تبریز</td>
+                                            <td>3</td>
+                                            <td>-</td>
+                                            <td>3</td>
+                                            <td>دانشگاه تهران</td>
+                                            <td> 97/10/6</td>
+                                            </tr>
+                                          
+                                            
+                                            </table>
+                                      
+                                        </div>
+                                    
+                                    
+                                    </div>
+                                    
+                                   
+
+                                    </div>
+                                    <div class="col-sm-2"></div>
+                                    
+                                    
+                                    
+                                    </div>
+                                    <!--archive league played games section end-->
+                                    
+                                    <!--archive league group tables section start-->
+                                    
+                                     <div class="archive-table-section">
+                                    
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="games-table">
+                                                <h6>گروه آ</h6>
+                                                <div class="match-table">
+                                        <table>
+                                                      <tr>
+                                              <th scope="col"  class="table-head"></th>  
+                                              <th scope="col"  class="table-head">بازی</th>  
+                                              <th scope="col"  class="table-head">برد</th>  
+                                              <th scope="col"  class="table-head">مساوی</th>  
+                                              <th scope="col"  class="table-head">باخت</th>  
+                                              <th scope="col"  class="table-head">گل ز</th>  
+                                              <th scope="col"  class="table-head">گل خ</th>  
+                                              <th scope="col"  class="table-head">تفاضل</th>  
+                                              <th scope="col"  class="table-head">امتیاز</th>  
+                                            </tr>
+                                            <tr>
+                                            <td>دانشگاه تبریز</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            </tr>
+                                            <tr>
+                                            <td>دانشگاه تبریز</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            </tr>
+                                               <tr>
+                                             <td>دانشگاه تبریز</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            </tr>
+                                                <tr>
+                                                 <td>دانشگاه تبریز</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            </tr>
+                                           
+                                            
+                                            </table>
+                                                </div>
+                                                    <h6>گروه آ</h6>
+                                                <div class="match-table">
+                                        <table>
+                                                      <tr>
+                                              <th scope="col"  class="table-head"></th>  
+                                              <th scope="col"  class="table-head">بازی</th>  
+                                              <th scope="col"  class="table-head">برد</th>  
+                                              <th scope="col"  class="table-head">مساوی</th>  
+                                              <th scope="col"  class="table-head">باخت</th>  
+                                              <th scope="col"  class="table-head">گل ز</th>  
+                                              <th scope="col"  class="table-head">گل خ</th>  
+                                              <th scope="col"  class="table-head">تفاضل</th>  
+                                              <th scope="col"  class="table-head">امتیاز</th>  
+                                            </tr>
+                                       <tr>
+                                               <td>دانشگاه تبریز</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            </tr>
+                                            <tr>
+                                                <td>دانشگاه تبریز</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            </tr>
+                                            <tr>
+                                             <td>دانشگاه تبریز</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            </tr>
+                                            <tr>
+                                             <td>دانشگاه تبریز</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            </tr>
+                                            </table>
+                                        </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <h6>گروه ب</h6>
+                                            <div class="match-table match-table2">
+                                                
+                                                
+                                              <table>
+                                                      <tr>
+                                              <th scope="col"  class="table-head"></th>  
+                                              <th scope="col"  class="table-head">بازی</th>  
+                                              <th scope="col"  class="table-head">برد</th>  
+                                              <th scope="col"  class="table-head">مساوی</th>  
+                                              <th scope="col"  class="table-head">باخت</th>  
+                                              <th scope="col"  class="table-head">گل ز</th>  
+                                              <th scope="col"  class="table-head">گل خ</th>  
+                                              <th scope="col"  class="table-head">تفاضل</th>  
+                                              <th scope="col"  class="table-head">امتیاز</th>  
+                                            </tr>
+                                          
+                                          
+                                            <tr>
+                                               <td>دانشگاه تبریز</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            </tr>
+                                            <tr>
+                                                <td>دانشگاه تبریز</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            </tr>
+                                            <tr>
+                                             <td>دانشگاه تبریز</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            </tr>
+                                            <tr>
+                                             <td>دانشگاه تبریز</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            </tr>
+                                            </table>
+                                            </div>
+                                            <h6>گروه ب</h6>
+                                            <div class="match-table match-table2">
+                                              <table>
+                                                      <tr>
+                                              <th scope="col"  class="table-head"></th>  
+                                              <th scope="col"  class="table-head">بازی</th>  
+                                              <th scope="col"  class="table-head">برد</th>  
+                                              <th scope="col"  class="table-head">مساوی</th>  
+                                              <th scope="col"  class="table-head">باخت</th>  
+                                              <th scope="col"  class="table-head">گل ز</th>  
+                                              <th scope="col"  class="table-head">گل خ</th>  
+                                              <th scope="col"  class="table-head">تفاضل</th>  
+                                              <th scope="col"  class="table-head">امتیاز</th>  
+                                            </tr>
+                                          
+                                         
+                                            <tr>
+                                               <td>دانشگاه تبریز</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            </tr>
+                                            <tr>
+                                                <td>دانشگاه تبریز</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            </tr>
+                                            <tr>
+                                             <td>دانشگاه تبریز</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            </tr>
+                                            <tr>
+                                             <td>دانشگاه تبریز</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            </tr>
+                                            </table>
+                                            </div>
+                                        </div>
+                                        </div>
+                                        </div>
+                                    
+                                    <!--archive league group tables section end-->
+                                    
+                                    <!--archive league main table section start-->
+                                    
+                                    <div class="main-table-section">
+                                        <div class="row">
+                                        <div class="col-sm-1"></div>
+                                        <div class="col-sm-10">
+                                            <h6 style="text-align: right">۹۷/۶/۱۰ - ۹۷/۱۰/۱۰</h6>
+                                         <table>
+                                              <tr>
+                                              <th scope="col"  class="table-head"></th>  
+                                              <th scope="col"  class="table-head"></th>  
+                                              <th scope="col"  class="table-head">بازی</th>  
+                                              <th scope="col"  class="table-head">برد</th>  
+                                              <th scope="col"  class="table-head">مساوی</th>  
+                                              <th scope="col"  class="table-head">باخت</th>  
+                                              <th scope="col"  class="table-head">گل ز</th>  
+                                              <th scope="col"  class="table-head">گل خ</th>  
+                                              <th scope="col"  class="table-head">تفاضل</th>  
+                                              <th scope="col"  class="table-head">امتیاز</th>  
+                                            </tr>
+                                             
+                                               <tr>
+                                             <td>1</td>
+                                             <td>دانشگاه تبریز</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            </tr>
+                                                  <tr>
+                                             <td>1</td>
+                                             <td>دانشگاه تبریز</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            </tr>
+                                                  <tr>
+                                             <td>2</td>
+                                             <td>دانشگاه تبریز</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            </tr>
+                                                  <tr>
+                                             <td>3</td>
+                                             <td>دانشگاه تبریز</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            </tr>
+                                                  <tr>
+                                             <td>4</td>
+                                             <td>دانشگاه تبریز</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            </tr>
+                                                  <tr>
+                                             <td>5</td>
+                                             <td>دانشگاه تبریز</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            </tr>
+                                                  <tr>
+                                             <td>6</td>
+                                             <td>دانشگاه تبریز</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            </tr>
+                                                  <tr>
+                                             <td>7</td>
+                                             <td>دانشگاه تبریز</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            </tr>
+                                                  <tr>
+                                             <td>8</td>
+                                             <td>دانشگاه تبریز</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            <td> 1</td>
+                                            </tr>
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            </table>
+                                            
+                                            </div>
+                                             <!--archive league main table section end-->
+                                            
+                                        <div class="col-sm-1"></div>
+                                        
+                                        
+                                        </div>
+                                        
+                                    </div>
+                                    
+                                    
+                                    
+                                    
+                                                                        </div>
+                                </div>
+                                </div>
+        </div>
+                 </div>
+                </div>
+             </div>
+            </div>
+            <div class="col-sm-1">
+            </div>
+        
+          <!--external js-->
+    <script src="resources/js/app.js"></script>
+        <script src="resources/js/persianumber.min.js"></script>
+       
+    </body>
+</html>

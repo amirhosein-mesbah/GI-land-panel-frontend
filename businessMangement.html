@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="fa">
+    <head>
+        <meta charset="utf-8">
+        
+         <!--bootstrap css-->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+         <!--external css-->
+        <link rel="stylesheet" href="resources/css/style.css" type="text/css">
+        
+    </head>
+    <body dir="rtl" class="group-section" >
+
+        <div class="container-fluid body">
+        
+         <div class="row">
+              
+			<div class="col-sm-2">
+                <!--menu start-->
+                <div class="menu">
+                    <div class="title-box">
+                    <p class="title"><span><img src="resources/img/Path%20339.png">جی آی لند <a href="#"><img src="resources/img/notification.png" class="notification"></a><a href="#"><img src="resources/img/power.png" class="log-off"></a> </span></p>
+                        </div>
+                    <ul>
+                         <a href="dashbord.html"><li><img src="resources/img/dashboard.png">داشبورد</li></a>
+                        <a href="amaroNatayej.html"><li><img src="resources/img/followers.png">آمار و نتایج لیگ ها</li></a>
+
+                        <a href="city-management.html"><li class="city-manage"><img src="resources/img/house.png">مدیریت شهرها</li></a>
+                        <a href="dastebandi.html"><li><img src="resources/img/layers.png">دسته بندی</li></a>
+                        <a href="businessMangement.html"><li class="current"><img src="resources/img/pie-chart.png">مدیریت بیزینس مارکت</li></a>
+                        <a href="users.html"><li><img src="resources/img/avatar.png">مدیریت مشتریان</li></a>
+                        <a href="team-management.html"><li><img src="resources/img/group(2).png">مدیریت تیم</li></a>
+                        <a href="mohtava.html"><li><img src="resources/img/book(1).png">مدیریت محتوا</li></a>
+                        <a href="hesabdari.html"><li><img src="resources/img/coin.png">حسابداری</li></a>
+                        <a href="etelaateKarbar.html"><li><img src="resources/img/011-user-2.png">اطلاعات کاربر</li></a>
+                      
+                    
+                    
+                    </ul>
+                     <!--menu end-->
+                    
+                </div>
+           
+             </div>
+            
+             <div class="col-sm-9">
+                 <div id="form">
+                     <!--selection buttons start-->
+                     <button class="select-business selection-group">افزودن بيزينس</button>
+                     <button class="select-business-list selection-group">لیست بیزنس</button>
+                     <!--selection buttons end-->
+           
+                    <div class="business">
+                        
+                        <!--add business section start-->
+                     <p class="lable">افزودن بيزينس</p> 
+                        <div class="business-form">
+                        <form>
+                            <img src="resources/img/author.jpg" class="form-img">
+                            <button type="submit" class="img-submit-btn">+</button>
+                            <input type="file" id="img-submit" name="image" accept="image/*" capture style="display:none"/>
+                             <div class="form-row">
+                                    <div class="col-sm-6">
+                                        
+                                   <p class="lable-business">نام </p>
+                                         <input type="text" class="form-control form-control-sm form-control-business" placeholder="دانشگاه تبریز"><!-- textbox dastebandi-->
+                                        <p class="lable-business">امکانات داخل بیزینس</p>
+                                         <textarea class="form-control form-control-sm form-control-business" id="facilities" rows="3" placeholder="زمین چمن طبیعی، زمین چمن مصنوعی، سالن ورزشی چند منظوره، استخر، مرکز بازی های رایانه ای"></textarea>
+                                         <p class="lable-business">شهر</p>
+                                        <select class="form-control form-control-sm form-control-business">
+                                            <option>تبریز</option>
+                                        </select>
+                                         <p class="lable-business">آدرس</p>
+                                         <input type="text" class="form-control form-control-sm form-control-business" placeholder="تبریز، خیابان امام، بلوار 29بهمن، دانشگاه تبریز">
+                                        <div class="form-row">
+                                    <div class="col-sm-5">
+                                        <p class="lable-business">سال تاسیس</p>
+                                         <input type="number" class="form-control form-control-sm form-control-business form-control2 " placeholder="1336">
+                                            </div>
+                                            <div class="col-sm-1">
+                                            </div>
+                                            <div class="col-sm-5">
+                                                <p class="lable-business form-control22">تعداد کاربر</p>
+                                         <input type="number" class="form-control form-control-sm form-control-business form-control2 form-control22" placeholder="2000">
+                                            </div>
+                                        </div>
+                                        
+                                          <p class="lable-business">مسئول مربوطه</p>
+                                    <input type="text" class="form-control form-control-sm" placeholder=""><!-- textbox varzesh-->
+                                </div>
+                                <div class="col-sm-6">
+                                  
+                                    <p class="lable-business">شماره تماس</p>
+                                    <input type="text" class="form-control form-control-sm" placeholder=""><!-- textbox varzesh-->
+                                    <p class="lable-business">توضیحات</p>
+                                         <textarea class="form-control form-control-sm form-control-business" id="exampleFormControlTextarea1" rows="5"></textarea>
+                                    <p class="lable-business">هزینه اشتراک (ریال) </p>
+                                    <input type="text" class="form-control form-control-sm" placeholder=""><!-- textbox varzesh-->
+                                    <button type="submit" class="lable-business business-submit-btn">افزودن</button>
+                                </div>
+                           
+                       </div>
+                        </form>
+                             </div>
+                        
+                        <!--add business section end-->
+                            </div>
+                <!--business list section start-->
+                    <div class="business-list">
+                     <p class="lable">لیست بیزنس</p> 
+                        <div id="list">
+                            
+                           <!--search section start-->
+    
+        <div class="row">
+            <div class="col-sm-6 filter-dsc-container">
+         <p class="filter-dsc" >        <img src="resources/img/filter.png" class="filter-logo"> فیلتر کردن بر اساس:</p>
+                <button class="filter-btn">استان</button>
+                <button class="filter-btn" >شهر</button>
+            </div>
+            <div class="col-sm-6">
+                <div class="search-container business-search">
+                <form action="/action_page.php">
+                 <input type="text" placeholder="جستجو کنید" name="search" class="search-input business-search-input" autofocus="off" autocomplete="off" >
+      <button type="submit" class="search-btn"><i class="fa fa-search"></i></button><!-- buttone jostoju-->
+    </form>
+                  
+            </div>
+          </div>
+        
+        </div>
+          <!--search section end-->
+     
+                                <!--business list table start-->
+                        <table class="table persianumber">
+  <thead>
+    <tr>
+      <th scope="col" class="number number-lable table-head">ردیف</th>
+        
+      <th scope="col"  class="table-head uni">نام بیزینس</th>
+      <th scope="col"  class="table-head">شهر</th>
+      <th scope="col"  class="table-head">شماره تماس</th>
+      <th scope="col"  class="table-head">مسئول مربوطه</th>
+      <th scope="col"  class="table-head">تنظیمات</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="table-row"><!-- radife 1-->
+      <th scope="row" class="number">1</th>
+      
+      <td class="uni">دانشگاه تبریز</td>
+      <td> </td>
+      <td> </td>
+      <td></td>
+      <td><a href="#" class="edit"><img src="resources/img/pen.png">ویرایش</a><!-- virayesh-->
+          <a href="#" class="delete"><img src="resources/img/delete.png">حذف</a><!-- delete-->
+        </td>
+    </tr>
+    <tr class="table-row"><!-- radife 2-->
+      <th scope="row" class="number">2</th>
+      
+      <td class="uni">دانشگاه پیام نور</td>
+      <td> </td>
+      <td> </td>
+      <td></td>
+      <td><a href="#" class="edit"><img src="resources/img/pen.png">ویرایش</a><!-- virayesh-->
+          <a href="#" class="delete"><img src="resources/img/delete.png">حذف</a><!-- delete-->
+        </td>
+    </tr>
+    <tr class="table-row"><!-- radife 3-->
+      <th scope="row" class="number">3</th>
+      
+     <td class="uni">دانشگاه علمی کاربردی</td>
+      <td> </td>
+      <td> </td>
+      <td></td>
+      <td><a href="#" class="edit"><img src="resources/img/pen.png">ویرایش</a><!-- virayesh-->
+          <a href="#" class="delete"><img src="resources/img/delete.png">حذف</a><!-- delete-->
+        </td>
+    </tr>
+      <tr class="table-row"><!-- radife 4-->
+      <th scope="row" class="number">4</th>
+     <td class="uni">دانشگاه اورمیه</td>
+      <td> </td>
+      <td> </td>
+      <td></td>
+      <td><a href="#" class="edit"><img src="resources/img/pen.png">ویرایش</a><!-- virayesh-->
+          <a href="#" class="delete"><img src="resources/img/delete.png">حذف</a><!-- delete-->
+          </td>
+    </tr>
+      <tr class="table-row"><!-- radife 5-->
+      <th scope="row" class="number">5</th>
+     <td class="uni">دانشگاه آزاد</td>
+      <td> </td>
+      <td> </td>
+      <td></td>
+      <td><a href="#" class="edit"><img src="resources/img/pen.png">ویرایش</a><!-- virayesh-->
+          <a href="#" class="delete"><img src="resources/img/delete.png">حذف</a><!-- delete-->
+          </td>
+    </tr>
+      <tr class="table-row"><!-- radife 6-->
+      <th scope="row" class="number">6</th>
+      <td class="uni">دانشگاه تهران</td>
+      <td> </td>
+      <td> </td>
+      <td></td>
+      <td><a href="#" class="edit"><img src="resources/img/pen.png">ویرایش</a><!-- virayesh-->
+          <a href="#" class="delete"><img src="resources/img/delete.png">حذف</a><!-- delete-->
+          </td>
+    </tr>
+      <tr class="table-row"><!-- radife 7-->
+      <th scope="row" class="number">7</th>
+      <td class="uni">دانشگاه اصفهان</td>
+      <td> </td>
+      <td> </td>
+      <td></td>
+      <td><a href="#" class="edit"><img src="resources/img/pen.png">ویرایش</a><!-- virayesh-->
+          <a href="#" class="delete"><img src="resources/img/delete.png">حذف</a><!-- delete-->
+          </td>
+    </tr>
+      <tr class="table-row"><!-- radife 8-->
+      <th scope="row" class="number">8</th>
+      <td class="uni">دانشگاه اهر</td>
+      <td > </td>
+      <td> </td>
+      <td></td>
+      <td>
+          <a href="#" class="edit"><img src="resources/img/pen.png">ویرایش</a><!-- virayesh-->
+          <a href="#" class="delete"><img src="resources/img/delete.png">حذف</a><!-- delete-->
+          </td>
+    </tr>
+  </tbody>
+</table>
+                            <!--business list table end-->
+                            
+                              <!-- button haye taghire safahte jadval start-->
+                            <div class="tables persianumber">
+                                <ul>
+                                   <li><a href="#"><img src="resources/img/down-arrow.png"></a></li><!-- shomare badi-->
+                                    <li><a href="#" class="persianumber">3</a></li>
+                                    
+                                    <li><a href="#">2</a></li>
+                                    <li><a href="#">1</a></li>
+                                  <li><a><img src="resources/img/down-arrow-1.png"></a></li><!-- shomare ghabli-->
+
+                                </ul>
+                            </div>
+                              <!-- button haye taghire safahte jadval end-->
+                            
+                    </div>
+                 </div>
+                </div>
+             </div>
+            </div>
+            <div class="col-sm-1">
+            </div>
+        </div>
+        
+          <!-- external js-->
+    <script src="resources/js/app.js"></script>
+        <script src="resources/js/persianumber.min.js"></script>
+       
+    </body>
+</html>

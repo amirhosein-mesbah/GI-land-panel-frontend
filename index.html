@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="fa">
+    <head>
+        <meta charset="utf-8">
+        
+        <!--bootstrap css-->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        <!--external css-->
+        <link rel="stylesheet" href="resources/css/style.css" type="text/css">
+        
+    </head>
+    <body dir="rtl" class="city-managment dashbord">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+        <div class="container-fluid body">
+        
+         <div class="row">
+              
+			<div class="col-sm-2">
+                   <!--menu start-->
+                <div class="menu">
+                    <div class="title-box">
+                    <p class="title"><span><img src="resources/img/Path%20339.png">جی آی لند 
+                        <a href="#"><img src="resources/img/notification.png" class="notification"></a><!-- icon  notification-->
+                        <a href="#"><img src="resources/img/power.png" class="log-off"></a><!-- icon log off--> </span></p>
+                        </div>
+                    <ul>
+                     <a href="dashbord.html"><li class="current"><img src="resources/img/dashboard.png">داشبورد</li></a>
+                        <a href="amaroNatayej.html"><li><img src="resources/img/followers.png">آمار و نتایج لیگ ها</li></a>
+
+                        <a href="city-management.html"><li class="city-manage"><img src="resources/img/house.png">مدیریت شهرها</li></a>
+                        <a href="dastebandi.html"><li><img src="resources/img/layers.png">دسته بندی</li></a>
+                        <a href="businessMangement.html"><li><img src="resources/img/pie-chart.png">مدیریت بیزینس مارکت</li></a>
+                        <a href="users.html"><li><img src="resources/img/avatar.png">مدیریت مشتریان</li></a>
+                        <a href="team-management.html"><li><img src="resources/img/group(2).png">مدیریت تیم</li></a>
+                        <a href="mohtava.html"><li><img src="resources/img/book(1).png">مدیریت محتوا</li></a>
+                        <a href="hesabdari.html"><li><img src="resources/img/coin.png">حسابداری</li></a>
+                        <a href="etelaateKarbar.html"><li><img src="resources/img/011-user-2.png">اطلاعات کاربر</li></a>
+                      
+                    
+                    
+                      
+                    
+                    </ul> 
+                       <!--menu end-->
+                </div>
+           
+             </div>
+             
+             <div class="col-sm-10">
+                 <div id="form">
+                   <div class="container-fluid">
+        
+         <div class="row">  
+                   <div class=" info">
+                      <div class="row">
+                             <!--new league section start-->
+                          <div class="col-sm-8">
+                              <h5>لیگ های جدید</h5>
+                              <h3>12</h3>
+                          </div>
+                          <div class="col-sm-4">
+                              <img src="resources/img/uefa-europa-league.png">
+                          </div>
+                       
+                       </div>
+                         <!--new league section end-->
+             </div>
+             
+             <div class=" info info2">
+                   <!--new users section start-->
+                      <div class="row">
+                          
+                          <div class="col-sm-8">
+                              <h5>کاربران جدید</h5>
+                              <h3>180</h3>
+                          </div>
+                          <div class="col-sm-4">
+                              <img src="resources/img/users.png">
+                          </div>
+                       
+                       </div>
+             </div>
+             <!--bazdid section start-->
+             <div class=" info ">
+                      <div class="row">
+                          
+                          <div class="col-sm-8">
+                              <h5>بازدید امروز</h5>
+                              <h3>467</h3>
+                          </div>
+                          <div class="col-sm-4">
+                              <img src="resources/img/view.png">
+                          </div>
+                       
+                       </div>
+             </div>
+             <!--bazdid section end-->
+             
+               <!--new users section end-->
+             <div class=" info info2">
+                 
+                 <!--daramad section start-->
+                      <div class="row">
+                          
+                          <div class="col-sm-8">
+                              <h5>درآمد امروز</h5>
+                              <h3>520000</h3>
+                          </div>
+                          <div class="col-sm-4">
+                              <img src="resources/img/wallet.png">
+                          </div>
+                       
+                       </div>
+             </div>
+             <!--daramad section end-->
+             
+             </div>
+            
+                       
+                       <!--bazdid chart section start-->
+                       <div class="row">  
+                           <div class="chart">
+                   
+                       
+                     
+                       <canvas id="mixed-chart" width="800" height="450"></canvas>
+                               
+                               <!--bazdid chart section js-->
+                       <script>new Chart(document.getElementById("mixed-chart"), {
+    type: 'bar',
+    data: {
+      labels: ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12", "13", "14", "15"],
+      datasets: [{
+          label: "Europe",
+          type: "line",
+          borderColor: "#EE4367",
+          data: [408,547,675,734,120,734,300,734,253,734,734,734,823,471,203],
+          fill: false
+        },  {
+          label: "Europe",
+          type: "bar",
+          backgroundColor: "#98CCD3",
+          data: [408,547,675,734,120,734,300,734,253,734,734,734,823,471,203],
+        }
+      ]
+    },
+    options: {
+      title: {
+        display: true,
+        text: 'بازدید ماهیانه از سایت'
+      },
+      legend: { display: false },
+        tooltips : {
+              enabled : false
+            
+          }
+    }
+});
+</script>
+             
+                           </div>
+                             <!--bazdid chart section end-->
+                           
+                           
+                             <!--notification section start-->
+              <div class=" notifcations">
+                  <h5>اعلان ها</h5>
+                  <ul>
+                  <li><img src="resources/img/Group%20295@2x.png">لورم اسپوم متن ساختگی</li>
+                  <li><img src="resources/img/Group%20297@2x.png">لورم اسپوم متن ساختگی</li>
+                  <li><img src="resources/img/Group%20296@2x.png">لورم اسپوم متن ساختگی</li>
+                  <li><img src="resources/img/Group%20296@2x.png">لورم اسپوم متن ساختگی</li>
+                  <li><img src="resources/img/Group%20295@2x.png">لورم اسپوم متن ساختگی</li>
+                  
+                  </ul>
+             </div>
+                <!--notification section end-->
+              
+            </div>
+                     
+                       
+                       <div class="row"> 
+                           
+                           <!--second new league section start-->
+                  <div class=" info-3">
+                      <h5 class=" info-3-text">لیگ های جدید</h5>
+                   <img src="resources/img/Group%20298.png">
+                      <div class="row">
+                          
+                          <div class="col-sm-6 statistic statistic1">
+                               <h5>2</h5>
+                              <h6>روزانه</h6>
+                              
+                          </div>
+                          <div class="col-sm-6 statistic">
+                               <h5>35</h5>
+                              <h6>کل</h6>
+                          </div>
+                       
+                       </div>
+             </div>
+                <!--second new league section end-->
+                           
+             <!--second bazdid section start-->
+            <div class=" info-3">
+                      <h5 class=" info-3-text-2">بازدید روزانه</h5>
+                   <img src="resources/img/Group%20299.png">
+                      <div class="row">
+                          
+                          <div class="col-sm-6 statistic statistic1">
+                               <h5>1200</h5>
+                              <h6>روزانه</h6>
+                              
+                          </div>
+                          <div class="col-sm-6 statistic">
+                               <h5>500000</h5>
+                              <h6>کل</h6>
+                          </div>
+                       
+                       </div>
+             </div>
+                           
+                           <!--second bazdid section end-->
+             
+                           
+                           <!--sabtenan section start-->
+                 <div class=" info-3">
+                      <h5 class=" info-3-text-3">ثبت نام روزانه لیگ</h5>
+                   <img src="resources/img/Group%20300.png">
+                      <div class="row ">
+                          
+                          <div class="col-sm-6 statistic statistic1">
+                               <h5>32</h5>
+                              <h6>روزانه</h6>
+                              
+                          </div>
+                          <div class="col-sm-6 statistic">
+                               <h5>1502</h5>
+                              <h6>کل</h6>
+                          </div>
+                       
+                       </div>
+             </div>
+                           
+                           <!--sabtenan section end-->
+            </div>
+                       <div class="row"> 
+                           
+                           <!--last changes section start-->
+                   <div class="news">
+                       
+                    <h5>آخرین تغییرات سایت </h5> 
+                       <div class="line">
+                       
+                    </div>
+                       <div class="news-notifi">
+                           <div class="row">
+                           <div class="col-sm-3">
+                             <h6 class="news-notifi-time">2 ساعت پیش</h6> 
+                        </div>
+                               <div class="col-sm-1 notif-img">
+                                     <span class="verticalLine"></span>
+                             <img src="resources/img/Group%20296@2x.png">
+                               </div>
+                           <div class="col-sm-8">
+                               <div class="news-notifi-text">
+                           <h5>عنوان</h5>
+                               <p>لورم اسپوم متن ساختگی با محتوای گرافیکی</p>
+                           </div>
+                               </div>
+                           </div>  
+                       </div>
+                       <div class="news-notifi">
+                           <div class="row">
+                           <div class="col-sm-3">
+                             <h6 class="news-notifi-time">2 ساعت پیش</h6> 
+                        </div>
+                               <div class="col-sm-1 notif-img">
+                                     <span class="verticalLine"></span>
+                             <img src="resources/img/Group%20296@2x.png">
+                               </div>
+                           <div class="col-sm-8">
+                               <div class="news-notifi-text">
+                           <h5>عنوان</h5>
+                               <p>لورم اسپوم متن ساختگی با محتوای گرافیکی</p>
+                           </div>
+                               </div>
+                           </div>  
+                       </div>
+                       <div class="news-notifi">
+                           <div class="row">
+                           <div class="col-sm-3">
+                             <h6 class="news-notifi-time">2 ساعت پیش</h6> 
+                        </div>
+                               <div class="col-sm-1 notif-img">
+                                     <span class="verticalLine"></span>
+                             <img src="resources/img/Group%20296@2x.png">
+                               </div>
+                           <div class="col-sm-8">
+                               <div class="news-notifi-text">
+                           <h5>عنوان</h5>
+                               <p>لورم اسپوم متن ساختگی با محتوای گرافیکی</p>
+                           </div>
+                               </div>
+                           </div>  
+                       </div>
+                       <div class="news-notifi">
+                           <div class="row">
+                           <div class="col-sm-3">
+                             <h6 class="news-notifi-time">2 ساعت پیش</h6> 
+                        </div>
+                               <div class="col-sm-1 notif-img">
+                                   
+                             <img src="resources/img/Group%20296@2x.png" class="">
+                                 <span class="verticalLine"></span>
+
+                               </div>
+                           <div class="col-sm-8">
+                               <div class="news-notifi-text">
+                           <h5>عنوان</h5>
+                               <p>لورم اسپوم متن ساختگی با محتوای گرافیکی</p>
+                           </div>
+                               </div>
+                           </div>  
+                       </div>
+                       
+             </div>
+                           
+                            <!--last changes section end-->
+                           
+                            <!--last laegues section start-->
+             
+              <div class="dashbord-tab">
+                 <h5> آخرین لیگ ها</h5>
+             
+             
+                        <table class="table persianumber dashbord-table"><!-- table varzesh ha-->
+  <thead><!-- onvane sutun ha-->
+    <tr>
+      <th scope="col" class="number number-lable table-head">ردیف</th>
+        
+      <th scope="col"  class="table-head ">نام لیگ</th>
+      <th scope="col"  class="table-head "> بیزینس</th>
+      <th scope="col"  class="table-head">وضعیت</th>
+      
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="table-row"><!-- radife 1-->
+      <th scope="row" class="number">1</th>
+            <td  >عنوان ساختگی </td>
+
+      <td >عنوان ساختگی</td>
+
+      <td> در حال برگزاری</td>
+     
+      
+    </tr>
+    <tr class="table-row"><!-- radife 2-->
+      <th scope="row" class="number">2</th>
+            <td  > عنوان ساختگی</td>
+
+      <td >عنوان ساختگی</td>
+      <td>در حال برگزاری </td>
+      
+   
+    </tr>
+    <tr class="table-row"><!-- radife 3-->
+      <th scope="row" class="number">3</th>
+      <td > عنوان ساختگی</td>
+     <td>عنوان ساختگی</td>
+
+      <td>در حال برگزاری </td>
+      
+      
+    </tr>
+      <tr class="table-row"><!-- radife 4-->
+      <th scope="row" class="number">4</th>
+          <td >عنوان ساختگی </td>
+     <td>عنوان ساختگی</td>
+
+      <td> در حال برگزاری</td>
+      
+      
+    </tr>
+      <tr class="table-row"><!-- radife 5-->
+      <th scope="row" class="number">5</th>
+          <td  >عنوان ساختگی</td>
+     <td >عنوان ساختگی</td>
+
+      <td>در حال برگزاری </td>
+      
+     
+    </tr>
+      <tr class="table-row"><!-- radife 6-->
+      <th scope="row" class="number">6</th>
+          <td  >عنوان ساختگی </td>
+      <td >عنوان ساختگی</td>
+
+      <td> در حال برگزاری</td>
+     
+      
+    </tr>
+      <tr class="table-row"><!-- radife 7-->
+      <th scope="row" class="number">7</th>
+          <td  > عنوان ساختگی</td>
+      <td >عنوان ساختگی</td>
+      <td>در حال برگزاری </td>
+     
+      
+    </tr>
+      <tr class="table-row"><!-- radife 8-->
+      <th scope="row" class="number">8</th>
+      <td  >عنوان ساختگی </td>
+          <td >عنوان ساختگی</td>
+      
+      <td > در حال برگزاری</td>
+     
+      
+    </tr>
+  </tbody>
+</table>
+            </div> 
+                           
+                           <!--last laegues section end-->
+            </div>
+             </div>
+                 </div>
+        </div>
+             
+             <!--external js-->
+    <script src="resources/js/app.js"></script>
+        <script src="resources/js/persianumber.min.js"></script>
+            </div>
+            </div>
+    </body>
+</html>

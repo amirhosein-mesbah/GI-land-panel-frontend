@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="fa">
+    <head>
+        <meta charset="utf-8">
+        
+         <!--bootstrap css-->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+         <!--external css-->
+        <link rel="stylesheet" href="resources/css/style.css" type="text/css">
+        
+    </head>
+    <body dir="rtl" class="city-managment">
+
+        <div class="container-fluid body">
+        
+         <div class="row">
+              
+			<div class="col-sm-2">
+                 <!--menu start-->
+                
+                <div class="menu">
+                    <div class="title-box">
+                    <p class="title"><span><img src="resources/img/Path%20339.png">جی آی لند <a href="#"><img src="resources/img/notification.png" class="notification"></a><!-- icon log notification--><a href="#"><img src="resources/img/power.png" class="log-off"></a><!-- icon log off--> </span></p>
+                        </div>
+                    <ul>
+                      <a href="dashbord.html"><li><img src="resources/img/dashboard.png">داشبورد</li></a>
+                        <a href="amaroNatayej.html"><li><img src="resources/img/followers.png">آمار و نتایج لیگ ها</li></a>
+
+                        <a href="city-management.html"><li class="city-manage current"><img src="resources/img/house.png">مدیریت شهرها</li></a>
+                        <a href="dastebandi.html"><li><img src="resources/img/layers.png">دسته بندی</li></a>
+                        <a href="businessMangement.html"><li><img src="resources/img/pie-chart.png">مدیریت بیزینس مارکت</li></a>
+                        <a href="users.html"><li ><img src="resources/img/avatar.png">مدیریت مشتریان</li></a>
+                        <a href="team-management.html"><li><img src="resources/img/group(2).png">مدیریت تیم</li></a>
+                        <a href="mohtava.html"><li><img src="resources/img/book(1).png">مدیریت محتوا</li></a>
+                        <a href="hesabdari.html"><li><img src="resources/img/coin.png">حسابداری</li></a>
+                        <a href="etelaateKarbar.html"><li><img src="resources/img/011-user-2.png">اطلاعات کاربر</li></a>
+                      
+                    
+                    
+                    
+                    </ul> 
+                </div>
+            <!--menu end-->
+             </div>
+             
+             <div class="col-sm-9">
+                 <div id="form">
+                       <!--selection buttons start-->
+                     <button class="select-city selection-city">افزودن شهر</button><!-- button haye ghesmate bala-->
+                     <button class="select-list selection-city">لیست شهر</button>
+                     <button class="select-prov selection-city">افزودن استان</button>
+                       <!--selection buttons end-->
+                     <div class="prov">
+                         
+                           <!--add ostan section start-->
+                     <p class="lable">افزودن استان</p> 
+                        <div class="form">
+                        <form><!-- forme afzudane ostan-->
+                            <div class="form-row">
+                                <div class="col">
+                                   <p class="lable-prove">نام استان</p>
+                                         <input type="text" class="form-control prov-input" placeholder="نام استان وارد کنید"><!-- textbox ostan-->
+                                </div>
+                             
+                            </div>
+                             <div class="form-row">
+                                <div class="col">
+                                    <button class="prove-button" type="submit">افزودن</button><!-- buttone afzudane ostan-->
+                                </div>
+                            </div>
+                        </form>
+                            </div>
+                         
+                         <!--add ostan section end-->
+                    </div> 
+                     
+                      <!--add ostan section start-->
+                    <div class="city">
+                     <p class="lable">افزودن شهر</p> 
+                        <div class="form">
+                        <form><!-- forme afzudane shahr-->
+                            <div class="form-row">
+                                <div class="col">
+                                   <p class="lable1">نام استان</p>
+                                         <input type="text" class="form-control" placeholder="نام استان وارد کنید"><!-- textbox ostan-->
+                                </div>
+                                <div class="col">
+                                    <p class="lable1">نام شهر</p>
+                                    <input type="text" class="form-control" placeholder="نام شهر وارد کنید"><!-- textbox shahr-->
+                                </div>
+                            </div>
+                             <div class="form-row">
+                                <div class="col">
+                                    <button class="form-button" type="submit">افزودن</button><!-- buttone afzudane shahr-->
+                                </div>
+                            </div>
+                        </form>
+                            </div>
+                    </div> 
+                         <!--add ostan section end-->
+                     
+                     
+                         <!--ostan list section start-->
+                    <div class="list">
+                     <p class="lable">لیست شهر</p> 
+                        <div id="list">
+                            <!--search section start-->
+                           <div class="search-container">
+    <form action="/action_page.php"><!-- forme jostojo liste shahr-->
+      <input type="text" placeholder="جستجو کنید" name="search" class="search-input" autofocus="off" autocomplete="off" >
+      <button type="submit" class="search-btn"><i class="fa fa-search"></i></button><!-- buttone jostoju-->
+    </form>
+  </div>
+                             <!--search section end-->
+                            
+                             <!--list ostan section table start-->
+                        <table class="table persianumber"><!-- table shahr ha-->
+  <thead><!-- onvane sutun ha-->
+    <tr>
+      <th scope="col" class="number number-lable table-head">ردیف</th>
+      <th scope="col"  class="table-head">نام شهر</th>
+      <th scope="col"  class="table-head">نام استان</th>
+      <th scope="col"  class="table-head">تنظیمات</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="table-row"><!-- radife 1-->
+      <th scope="row" class="number">1</th>
+      <td>تبریز</td>
+      <td>آذربایجان شرقی</td>
+      <td><a href="#" class="edit"><img src="resources/img/pen.png">ویرایش</a>
+          <a href="#" class="delete"><img src="resources/img/delete.png">حذف</a>
+        </td>
+    </tr>
+    <tr class="table-row"><!-- radife 2-->
+      <th scope="row" class="number">2</th>
+      <td>مراغه</td>
+      <td>آذربایجان شرقی</td>
+      <td><a href="#" class="edit"><img src="resources/img/pen.png">ویرایش</a>
+          <a href="#" class="delete"><img src="resources/img/delete.png">حذف</a>
+        </td>
+    </tr>
+    <tr class="table-row"><!-- radife 3-->
+      <th scope="row" class="number">3</th>
+      <td>اهر</td>
+      <td>آذربایجان شرقی</td>
+      <td><a href="#" class="edit"><img src="resources/img/pen.png">ویرایش</a><!-- virayesh-->
+          <a href="#" class="delete"><img src="resources/img/delete.png">حذف</a><!-- hazf-->
+        </td>
+    </tr>
+      <tr class="table-row"><!-- radife 4-->
+      <th scope="row" class="number">4</th>
+      <td>مرند</td>
+      <td>آذربایجان شرقی</td>
+      <td><a href="#" class="edit"><img src="resources/img/pen.png">ویرایش</a><!-- virayesh-->
+          <a href="#" class="delete"><img src="resources/img/delete.png">حذف</a><!-- hazf-->
+          </td>
+    </tr>
+      <tr class="table-row"><!-- radife 5-->
+      <th scope="row" class="number">5</th>
+      <td>هریس</td>
+      <td>آذربایجان شرقی</td>
+      <td><a href="#" class="edit"><img src="resources/img/pen.png">ویرایش</a><!-- virayesh-->
+          <a href="#" class="delete"><img src="resources/img/delete.png">حذف</a><!-- hazf-->
+          </td>
+    </tr>
+      <tr class="table-row"><!-- radife 6-->
+      <th scope="row" class="number">6</th>
+      <td>آذرشهر</td>
+      <td>آذربایجان شرقی</td>
+      <td><a href="#" class="edit"><img src="resources/img/pen.png">ویرایش</a><!-- virayesh-->
+          <a href="#" class="delete"><img src="resources/img/delete.png">حذف</a><!-- hazf-->
+          </td>
+    </tr>
+      <tr class="table-row"><!-- radife 7-->
+      <th scope="row" class="number">7</th>
+      <td>بناب</td>
+      <td>آذربایجان شرقی</td>
+      <td><a href="#" class="edit"><img src="resources/img/pen.png">ویرایش</a><!-- virayesh-->
+          <a href="#" class="delete"><img src="resources/img/delete.png">حذف</a><!-- hazf-->
+          </td>
+    </tr>
+      <tr class="table-row"><!-- radife 8-->
+      <th scope="row" class="number">8</th>
+      <td>ورزقان</td>
+      <td>آذربایجان شرقی</td>
+      <td><a href="#" class="edit"><img src="resources/img/pen.png">ویرایش</a><!-- virayesh-->
+          <a href="#" class="delete"><img src="resources/img/delete.png">حذف</a><!-- hazf-->
+          </td>
+    </tr>
+  </tbody>
+</table>
+                            
+                            <!--list ostan section table end-->
+                            
+                               <!-- button haye taghire safahte jadval start-->
+                            <div class="tables persianumber">
+                                <ul>
+                                   <li><a href="#"><img src="resources/img/down-arrow.png"></a></li><!-- shomare badi-->
+                                    <li><a href="#" class="persianumber">3</a></li>
+                                    
+                                    <li><a href="#">2</a></li>
+                                    <li><a href="#">1</a></li>
+                                  <li><a><img src="resources/img/down-arrow-1.png"></a></li><!-- shomare ghabli-->
+
+                                </ul>
+                            </div>
+                               <!-- button haye taghire safahte jadval end-->
+                    </div>
+                 </div>
+                     
+                           <!--ostan list section end-->
+                </div>
+             </div>
+            </div>
+            <div class="col-sm-1">
+            </div>
+        </div>
+        
+              <!--external js-->
+    <script src="resources/js/app.js"></script>
+        <script src="resources/js/persianumber.min.js"></script>
+       
+    </body>
+</html>

@@ -1,0 +1,1832 @@
+/*basic setups*/
+
+
+@import url(fonts/fontiran.css); /* لینک فایلی که وظیفه بارگذاری فونت ها را برعهده دارد */
+ 
+
+
+*{
+    margin: 0;
+    padding: 0;
+    border:0;
+ 
+}
+
+html,body{
+    margin: 0;
+    padding: 0;
+    
+    font-family: iranyekan(fanum) ,roboto ,Arial !important;
+    font-weight: 300;
+    font-size: 18px;
+    
+   
+}
+.log-in-body{
+    background-color: #364E68;
+    overflow-y: hidden;
+}
+
+.city-managment{
+    background-color: #EBF0F6;
+    overflow-y: hidden;
+}
+.group-section{
+     background-color: #EBF0F6;
+    overflow-y: hidden;
+}
+
+.dashbord{
+    overflow-y:scroll;
+}
+/************   menu   ************/
+.col-sm-2{
+    padding: 0;
+}
+.col-sm-9{
+    padding: 0;
+}
+
+.menu{
+    background-color: #364E68;
+    padding: 0;
+    width: 250px;
+    height: 100vh;
+  
+}
+
+.title{
+    text-align: right;
+    color: aliceblue;
+   background-color: #132238;
+    padding-top: 30px;
+    
+}
+
+.notification,
+.log-off{
+width: 23px;
+    margin-right: 15px;
+}
+.notification{
+    margin-right: 40px;
+   
+}
+.title-box{
+    height: 80px;
+    background-color: #132238;   
+}
+
+.title img{
+    margin-left: 10px;
+    margin-top: -10px;
+}
+.menu a li{
+    height: 60px;
+    color: #fff;
+    padding-top: 15px;
+     text-align: right;
+    padding-right: 5px;
+    transition: background-color 0.3s,border-left 0.3s ;
+    font-size: 20;
+}
+.menu a li  img{
+    margin-left: 10px;
+}
+.menu a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.menu a li:hover
+{
+    background-color: #EE4367;
+    border-left: 4px solid #6c87f8;
+}
+
+.current{
+      background-color: #EE4367;
+    border-left: 4px solid #6c87f8; 
+}
+
+/************   log in page   ************/
+
+
+.log-in-form{
+    margin-top: 40%;
+    background-color: #EBF0F6;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.15);
+    border: 2px solid #707070;
+    padding: 80px 0;
+    border-radius: 20px;
+    border: 0;
+    
+}
+.form-control-log-in{
+    background-color: #364E68;
+    color: #fff;
+    padding-right: 30px;
+    width: 90%;
+    margin-left: 5%;
+    height: 50px;
+    border-radius: 20px;
+    
+    
+    
+    
+}
+.form-control-log-in:focus{
+     background-color: #364E68;
+    color: #fff;
+    font-weight: 00;
+}
+
+.form-control-log-in::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #fff;
+}
+.form-control-log-in::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #fff;
+}
+.form-control-log-in::-moz-placeholder { /* Firefox 19+ */
+    color: #fff;
+}
+.form-control-log-in:-ms-input-placeholder { /* IE 10+ */
+    color: #fff;
+}
+.form-control-log-in:-moz-placeholder { /* Firefox 18- */
+   color: #fff;
+}
+.pass-show{
+    margin-left: 89%;
+    margin-top: 10px;
+    cursor: pointer;
+    width: 20px;
+}
+
+
+.submit-btn{
+    color: #fff;
+    background-color: #EE4367;
+ border: 0;
+    border-radius: 20px;
+    width: 90%;
+    height: 50px;
+    margin-left: 5%;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.form-check{
+    margin-top: 25px;
+    margin-left: 5%;
+}
+
+label{
+    margin-right: 30px;
+}
+
+.form-check-input{
+    
+    position: relative;
+}
+.forget-pass{
+    position: absolute;
+    cursor: pointer;
+    left: 55%;
+    font-size: 16px;
+}
+.forget-pass:hover{
+   font-weight: bold;
+}
+
+/**********************/
+
+.forget-password{
+    display: none;
+}
+.management-panel{
+    margin-left: 55%;
+    cursor: pointer;
+}
+.management-panel:hover{
+    font-weight: bold;
+}
+
+
+/************   city management   ************/
+
+.selection-city{
+    border-radius: 10px;
+    background-color:  #fff;
+    color: #000;
+    width: 130px;
+    height: 40px;
+    border: 0;
+    margin-top: 20px;
+    box-shadow: 1px 1px rgba(136, 132, 132, 0.46);
+    font-size: 95%;
+   
+}
+.select-list{
+ margin-left: 60%;
+    
+}
+.select-city{
+     background-color: #EE4367;
+    color: #fff;
+    margin-left: 10px;
+}
+.select-prov{
+    margin-left: 0;
+}
+
+.select-city:hover,
+.select-list:hover,
+.select-prov:hover{
+    background-color: #EE4367;
+    color: #fff;
+    cursor: pointer;
+}
+
+/*********************************/
+.lable{
+    text-align: right;
+    margin-right: 50px;
+    margin-top: 20px;
+}
+.lable1{
+    text-align: right;
+    margin-right: 50px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    
+}
+.city{
+    display: block;
+}
+.form{
+    background-color: #fff;
+    height: 110%;;
+    border-radius: 5px;
+    margin-right: 50px;
+    box-shadow: 2px 2px rgba(136, 132, 132, 0.46);
+}
+
+.form-control{
+    width: 300px;
+    margin-right: 50px;
+    margin-bottom: 20px;
+    background-color: #EBF0F6;
+}
+
+.form-button{
+    border-radius: 10px;
+    width: 200px;
+    height: 40px;
+    background-color: #EE4367;;
+    border: 0;
+    color:#fff;
+    position: absolute;
+    right: 380px;
+    top: 25px;
+    font-weight: 500;
+    font-size: 20px;
+    
+    
+}
+.form-button:hover{
+    font-size: 22px;
+    cursor: pointer;
+}
+/*************************/
+.prov{
+    display: none;
+}
+
+.prov-input{
+    margin: 0 auto;
+     width: 300px;
+   
+    background-color: #EBF0F6;
+}
+.lable-prove{
+    margin-left: 650px;
+    margin-top: 20px;
+}
+.prove-button{
+    border-radius: 10px;
+    width: 200px;
+    height: 40px;
+    background-color: #EE4367;;
+    border: 0;
+    color:#fff;
+    margin-top: 20px;
+    margin-left: 450px;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+
+
+
+/************************/
+
+.list{
+    display: none;
+}
+#list{
+    background-color: #fff;
+    height: 110%;
+    border-radius: 5px;
+    margin-right: 50px;
+     box-shadow: 2px 2px rgba(136, 132, 132, 0.46);
+}
+.number{
+    text-align: center;
+    margin-right: 25px;
+    width: 50px;
+}
+
+.table{
+    text-align: center;
+    width: 80%;
+    margin-right: 10%;
+    margin-top: 30px;
+    
+    
+}
+
+.search-container{
+    margin-left: 700px;
+    padding-top: 30px;
+    margin-bottom: 10px;
+    margin-right: 10%;
+    
+}
+
+.search-btn{
+    border: 0;
+    background-color: #EBF0F6; 
+    margin-right: -5px;
+    width: 8%;
+    height: 49.5px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    padding-left: 20px;
+    cursor: pointer;
+        padding-left: 23px;
+    
+}
+.search-input{
+    padding-right: 20px;
+    background-color: #EBF0F6; 
+    border: 0;
+    width: 90%;
+    height: 50px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.search-input:focus{
+    outline: none;
+}
+.table th{
+    border: 0;
+}
+.table-row{
+    border-top: 1px solid #000;
+ 
+}
+.table thead th{
+   border-bottom: 1px solid #000; 
+}
+.table td, .table th{
+    border-bottom: 1px solid #000; 
+    padding: 10px;
+   
+}
+
+.tables{
+    margin-left: 75%;
+    margin-top: 20px;
+}
+.tables li{
+    display: inline-block;
+    text-decoration: none;
+    margin-left: 10px;
+    font-size: 110%;
+    width: 20px;
+    height: 20px;
+     
+}
+.tables li a{
+    text-decoration: none;
+    display: inline-block;
+    color: #000;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    line-height: 35px;
+    
+   
+}
+.tables li a img{
+   height: 10px;
+    width: 10px; 
+    margin-top: -5px;
+}
+.tables li a:hover{
+    background-color: #EE4367;
+    border-radius: 50%;
+    color: #fff;
+}
+/***********************/
+
+.edit{
+   
+    margin-left: 40px;
+}
+.edit:hover{
+    text-decoration: none;
+}
+.edit img{
+    margin-left: 10px;
+    text-decoration: none;
+}
+
+.delete img{
+    margin-left: 10px;
+}
+.delete:hover{
+    text-decoration: none;
+}
+
+
+/************   dastebandi   ************/
+
+
+
+.selection-group{
+    border-radius: 10px;
+    background-color:  #fff;
+    color: #000;
+    width: 125px;
+    height: 40px;
+    border: 0;
+    margin-top: 20px;
+    box-shadow: 1px 1px rgba(136, 132, 132, 0.46);
+    font-size: 90%;
+   
+}
+.select-sport-list{
+ margin-left: 60%;;
+        font-size: 80%;
+
+    
+}
+.select-sport{
+     background-color: #EE4367;
+    color: #fff;
+    margin-left: 10px;
+        font-size: 80%;
+
+}
+.select-group{
+    margin-left: 0;
+        font-size: 80%;
+    width: 140px;
+
+}
+
+.select-sport:hover,
+.select-sport-list:hover,
+.select-group:hover{
+    background-color: #EE4367;
+    color: #fff;
+    cursor: pointer;
+}
+
+/*********************************/
+.lable{
+    text-align: right;
+    margin-right: 50px;
+    margin-top: 20px;
+}
+.lable1{
+    text-align: right;
+    margin-right: 50px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    
+}
+.sport{
+    display: block;
+}
+.form{
+    background-color: #fff;
+    height: 200px;
+    border-radius: 5px;
+    margin-right: 50px;
+    box-shadow: 2px 2px rgba(136, 132, 132, 0.46);
+}
+
+.form-control-group{
+    width: 300px;
+    margin-right: 50px;
+    margin-bottom: 20px;
+    background-color: #EBF0F6;
+}
+
+.form-button{
+    border-radius: 10px;
+    width: 200px;
+    height: 40px;
+    background-color: #EE4367;;
+    border: 0;
+    color:#fff;
+    position: absolute;
+    right: 380px;
+    top: 25px;
+    font-weight: 500;
+    font-size: 20px;
+    
+    
+}
+.form-button:hover{
+    font-size: 22px;
+    cursor: pointer;
+}
+/*************************/
+.group{
+    display: none;
+}
+
+.group-input{
+    margin: 0 auto;
+}
+.lable-group{
+    margin-left: 620px;
+    margin-top: 20px;
+}
+.group-button{
+    border-radius: 10px;
+    width: 200px;
+    height: 40px;
+    background-color: #EE4367;;
+    border: 0;
+    color:#fff;
+    margin-top: 20px;
+    margin-left: 465px;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+
+
+
+/************************/
+
+.list{
+    display: none;
+}
+
+.number{
+    text-align: center;
+    margin-right: 25px;
+    width: 50px;
+}
+
+.table{
+    text-align: center;
+    width: 80%;
+    margin-right: 10%;
+    margin-top: 30px;
+    
+    
+}
+
+.table th{
+    border: 0;
+}
+.table-row{
+    border-top: 1px solid #000;
+ 
+}
+.table thead th{
+   border-bottom: 1px solid #000; 
+}
+.table td, .table th{
+    border-bottom: 1px solid #000; 
+    padding: 10px 10px 10px 10px;
+   
+}
+
+.sports-kind{
+    width: 20px;
+}
+.sports{
+    text-align: right;
+}
+.sports img{
+    margin-left: 10px;
+    margin-right: 150px;
+    width: 20px;
+}
+
+
+
+/************   business manage   ************/
+
+button{
+    cursor: pointer;
+}
+
+.form-img{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-top: 20px;
+    margin-left: 85%;
+}
+
+.img-submit-btn{
+    position: absolute;
+    left: 87%;
+    top: 220px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #EE4367;
+    color: #fff;
+    
+}
+
+.lable-business{
+    text-align: right;
+    margin-right: 50px;
+    font-size: 16px;
+    margin-top: 10px;;
+    margin-bottom: 3px;
+}
+.form-control-business{
+    margin-bottom: 5px;
+}
+
+.business-form{
+    margin-top: -1%;
+    height: 10%;
+    background-color: #fff;
+    border-radius: 5px;
+    margin-right: 50px;
+    box-shadow: 2px 2px rgba(136, 132, 132, 0.46);
+}
+
+.form-control2{
+    width: 60%;
+    
+}
+.form-control22{
+    margin-right: -35px;
+}
+
+.business-submit-btn{
+    width: 100px;
+    text-align: center;
+    height: 40px;
+    border-radius: 20px;
+    color: #fff;
+    background-color: #EE4367;
+    margin-left: 380px;
+    margin-top: 20px;
+}
+
+
+.select-business-list{
+ margin-left: 74%;
+    
+}
+.select-business{
+     background-color: #EE4367;
+    color: #fff;
+    margin-left: 10px;
+}
+.select-business{
+    margin-left: 0;
+}
+
+.select-business:hover,
+.select-business-list:hover{
+    background-color: #EE4367;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+
+
+
+.business-list{
+    display: none;
+}
+
+.filter-logo{
+    margin-left: 5px;
+    
+}
+
+.business-search{
+     margin-left: 100px;
+    padding-top: 30px;
+    margin-bottom: 10px;
+    margin-right: 70px;
+}
+
+.business-search-input{
+    width: 80%;
+}
+.filter-dsc{
+    text-align: right;
+    display: inline;
+    padding-top: 30px;
+    margin-left: 10px;
+}
+.filter-dsc-container{
+    padding-top: 40px;
+    text-align: right;
+    padding-right: 120px;
+}
+.filter-btn{
+    margin-left:5px;
+    margin-right: 5px;
+    color: #fff;
+    background-color: #364E68;
+    border-radius: 20px;
+    width: 70px;
+    height: 30px
+}
+
+.uni{
+    text-align: right;
+   
+}
+
+/************   business manage   ************/
+
+
+.filter-btn-team{
+    margin: 0;
+}
+
+.table-team{
+    text-align: center;
+    width: 90%;
+    margin-right: 5%;
+    margin-top: 30px;
+    font-size: 95%;
+}
+
+.team-filter-dsc-container{
+    padding-right: 7%;
+  
+}
+
+.team-search{
+     margin-left: 10%;
+    margin-right: 10%;
+}
+
+.form-col{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.form-2-row{
+    margin-top: -20px;
+}
+
+.table-teammate{
+    width: 70%;
+    margin-top: 5px;
+}
+.table-teammate td{
+    padding-top: 3px;
+    padding-bottom: 0px;
+    margin: 0;
+}
+.table-teammate th{
+    padding-bottom: 3px;
+    padding-top: 0;
+}
+
+.team-submit-btn{
+    margin-top: 10px;
+}
+
+.tables-teammate{
+    margin-bottom: 0;
+    padding-top: 0;
+    font-size: 80%;
+     margin-left: 82%;
+    margin-top: 10px;
+}
+
+.tables-teammate li{
+    display: inline-block;
+    text-decoration: none;
+    margin-left: 5px;
+    font-size: 110%;
+    width: 20px;
+    height: 20px;
+     
+}
+.tables-teammate li a{
+    text-decoration: none;
+    display: inline-block;
+    color: #000;
+    height: 25px;
+    width: 25px;
+    text-align: center;
+    line-height: 25px;
+    cursor: pointer;
+   
+}
+.tables-teammate li a img{
+   height: 8px;
+    width: 8px; 
+    margin-top: -3px;
+}
+.tables-teammate li a:hover{
+    background-color: #EE4367;
+    border-radius: 50%;
+    color: #fff;
+}
+
+
+/******************/
+
+.add-teammate-pop-btn{
+      border-radius: 10px;
+   background-color: #EE4367;
+    color: #fff;
+    width: 125px;
+    height: 40px;
+    border: 0;
+    margin-top: 20px;
+    box-shadow: 1px 1px rgba(136, 132, 132, 0.46);
+    font-size: 90%;
+}
+
+.pop-lable{
+    margin-left: 75%;
+    margin-right: 0;
+    
+}
+.add-teammate{
+     border-radius: 10px;
+   background-color: #EE4367;
+    color: #fff;
+    width: 145px;
+    height: 40px;
+    border: 0;
+    
+    box-shadow: 1px 1px rgba(136, 132, 132, 0.46);
+    font-size: 95%;
+    position: absolute;
+    left: 5%;
+    bottom: 25%;
+}
+.submit-teammate{
+    bottom: 15%;
+    
+}
+
+.phone-number{
+    margin-right: -28%;
+}
+.phone-labale{
+    margin-right: -28%;
+    width: 50%;
+}
+
+/************   etelaate karbar   ************/
+
+.select-dastrasi{
+    margin-right: 38%;
+}
+
+.select-dastrasi,
+.select-user,
+.select-pass,
+.select-admin{
+    width: 150px
+}
+
+.select-dastrasi:hover,
+.select-user:hover,
+.select-pass:hover,
+.select-admin:hover{
+    background-color: #EE4367;
+    color: #fff;
+    cursor: pointer;
+ 
+}
+
+.select-admin{
+     background-color: #EE4367;
+    color: #fff;
+    cursor: pointer;
+    
+}
+.admin .form{
+    height: 300px;
+    
+}
+
+.admin-btn{
+    width: 200px;
+        margin-left: 200px;
+    
+}
+
+.filter-btn-user{
+    font-size: 90%;
+    width: 80px;
+    margin: 0;
+}
+
+.user-number{
+    width: 10%;
+    
+}
+
+.admin-form-col{
+    margin-top: 30px;
+}
+
+.pass{
+    display: none;
+}
+.users{
+    display: none;
+}
+.dastrasi{
+    display: none;
+}
+
+/********toggle btn**********/
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 25px;
+   
+    padding: 0;
+    margin-bottom: 0;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+    
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #EBF0F6;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 4px;
+  bottom: 2px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+    background-color: #EE4367;
+}
+
+input:checked + .slider {
+  background-color: #EBF0F6;
+     border-color: #EE4367;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #EBF0F6;
+     border-color: #EE4367;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+    background-color: #EE4367;
+     border-color: #EE4367;
+}
+
+/* Rounded sliders */
+.dashbord{
+    overflow-y: auto;
+}
+.slider.round {
+  border-radius: 34px;
+     border: 1px solid #EE4367;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+    background-color: rgba(238, 67, 103, 0.63);
+}
+
+.tables-users{
+    margin-left: 79%;
+}
+
+/************   etelaate karbar   ************/
+
+.info{
+    padding: 10px 20px 10px 50px;
+    background-color: #F1F1F1;
+    border-radius: 20px;
+    margin-top: 2%;
+      margin-right: 1%;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.15);
+    text-align: right;
+    width: 24%;
+   
+    
+}
+.info h3,
+.info h5{
+    color: #364E68;
+}
+.info h5{
+    font-size: 20px;
+}
+.info h3{
+    font-size: 35px;
+}
+.info2{
+    background-color: #EBF0F6;
+}
+
+
+
+.notifcations{
+    background-color: #fff;
+    padding: 20px 20px 50px 20px;
+    margin-top: 2%;
+    margin-right: 1%;
+    border-radius: 20px;
+    text-align: right;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.15);
+    color: #132238;
+    width: 30%;
+    
+}
+.notifcations li {
+    list-style: none;
+    margin-bottom: 5%;
+    color: #132238;
+    font-size: 110%;
+    font-weight: 200;
+    margin-top: 10%;
+    margin-right: 5%;
+
+}
+.notifcations li img{
+    width: 40px;
+    height: 40px;
+    margin-left: 5%;
+}
+.notifcations h5{
+    margin-bottom: 5%;
+    margin-top: 5%;
+    color: #132238;
+    
+}
+.notifcations ul{
+    text-decoration: none;
+}
+
+.chart{
+    width: 68%;
+    margin-right: 1%;
+    padding:  20px 20px 0 20px;
+    background-color: #fff;
+      margin-top: 2%;
+    border-radius: 20px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.15);
+}
+
+
+
+
+
+.info-3{
+    width: 31%;
+     
+    background-color: #fff;
+    border-radius: 20px;
+    margin-top: 2%;
+      margin-right: 2%;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.15);
+    text-align: right;
+}
+
+.info-3 img{
+    width: 100%;
+}
+
+.info-3-text{
+color: #fff;
+    position: absolute;
+    right: 5%;
+    top: 42%;
+    
+}
+
+.info-3-text-2{
+    color: #38C2D5;
+    position: absolute;
+    right: 37%;
+    top: 42%;
+    
+}
+
+.info-3-text-3{
+    color: #fff;
+    position: absolute;
+    right: 70%;
+    top: 42%;
+    
+}
+
+.statistic {
+    text-align: center;
+    margin: 5% 0;
+   
+}
+
+.statistic h6{
+    
+    
+    color: #A8A8A8;
+}
+
+
+
+.statistic1{
+    border-left: 1px solid #A8A8A8;
+}
+
+.dashbord-tab{
+    width: 45%;
+    background-color: #fff;
+    margin-top: 2%;
+    padding: 2% 0;
+    border-radius: 20px;
+    margin-bottom: 2%;
+    margin-right: 1%;
+     box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.15);
+    
+}
+
+.dashbord-tab h5,
+.news h5{
+    text-align: right;
+    margin: 0 4% 5% 0;
+    color: #364E68;
+}
+
+.dashbord-table{
+    width: 100%;
+    margin: 0;
+}
+
+.news{
+    width: 53%;
+     background-color: #fff;
+    margin-top: 2%;
+    padding: 2% 2%;;
+         box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.15);
+
+    border-radius: 20px;
+    margin-bottom: 2%;
+    margin-right: 1%;
+}
+
+.news-notifi{
+    margin-bottom: 5%;
+}
+
+.news-notifi-time,
+.news-notifi-text{
+    
+    text-align: right;
+   
+}
+
+.news-notifi img{
+    width: 45px;
+    height: 45px;
+    z-index: 1;
+    float: right;
+    margin-top: 55%;
+    display: block;
+    
+    
+}
+
+.news-notifi-time {
+    margin-top: 15%;    
+ 
+ 
+}
+
+.news-notifi-text{
+      padding-right: 10%;
+
+}
+
+.verticalLine {
+   display: block;
+   position: absolute;
+   background-color: #707070;
+   width: 2px;
+   top: -10px;
+   bottom: 0px;
+   left: 30%;
+   height: 120px;
+   
+    z-index: 0;
+}
+.notif-img img{
+   position: absolute;
+}
+
+
+
+
+.barchasb-input{
+    width: 50%;
+    padding-right: 0 10%;
+}
+.barchasb-lable{
+    margin-top: 70%;
+    padding-right: 15%;
+}
+
+.barchasb-btn{
+    margin-right: 5%;
+    width: 100px;
+}
+
+
+.search-container-barchasb{
+    margin: 0;
+    padding: 5% 30% 0 30%;
+}
+
+.tables-barchasb{
+    margin-right: 10%;
+    margin-left: 65%;
+}
+/************   users  ************/
+
+
+
+.sms-section{
+    margin-top: 5%;
+    padding-right: 5%;
+}
+
+
+.sms-btn{
+    width: 60%;
+
+}
+
+.sms-lable{
+    text-align: left;
+    margin-left: 5%;
+}
+.sms-lable1{
+    padding-top: 5%;
+}
+.sms-charge{
+    margin-top: 5%;
+}
+
+.charge-input{
+    margin-right: 20%;
+    margin-top: 5%
+}
+
+.charge-btn{
+   border-radius: 10px;
+    width: 200px;
+    height: 35px;
+    background-color: #EE4367;;
+    border: 0;
+    color:#fff;
+    position: absolute;
+    right: 50%;
+    top: 50%;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.eteleresani-btn{
+    margin-left: 0%;
+    margin-right: 38%;
+}
+
+.mojudi-btn{
+    margin-right: 0;
+}
+.tables-sms{
+    margin-left: 60%;
+}
+.input-sms{
+    width: 80%;
+    background-color: #fff;
+    border: 1px solid #000;
+    margin: 0;
+}
+
+.lable-sms{
+    text-align: right;
+    margin-right: 10px;
+    font-size: 16px;
+    margin-top: 10px;;
+    margin-bottom: 5px; 
+}
+
+
+/************   mohtava  ************/
+.select-mohtava{
+    width: 200px;
+}
+
+.select-mohtava-list{
+     margin-left: 53%;
+
+}
+.lable-mohtava{
+    padding-top: 5%;
+}
+
+.edit{
+    
+    color: #33DABD;
+}
+.delete{
+    color: #FE3434;
+    
+}
+
+
+.editor{
+    width: 78%;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.input-group{
+    border: 1px solid #707070;
+    width: 55%;
+    margin-right: 10%;
+    padding-right: 3%;
+    border-radius: 5px;
+}
+
+.upload-photo{
+    width: 78%;
+    height: 100px;
+    border: 1px solid #707070;
+    border-radius: 5px;
+    margin-bottom: 0;
+}
+
+#upfile0{
+    width: 25px;
+    float: right;
+}
+
+.upload-img-lable{
+    margin-right: 0;
+}
+
+.upload-img{
+    width: 95%;
+    height: 95%;
+    margin-top: 1%;
+    background-color: #E6E6E6;
+    
+}
+.upload-img-photo{
+    width: 100%;
+    height: 100%;
+}
+.upload{
+    height: 100%;
+}
+
+.upload-btn{
+    border-radius: 10px;
+    width: 200px;
+    height: 40px;
+    background-color: #EE4367;;
+    border: 0;
+    color:#fff;
+    margin-left: 75%;
+    margin-bottom: 2%;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.lable3{
+    margin-top:-20px;
+    padding-top: 0;
+    font-size: 90%;
+}
+
+
+
+.money-input{
+ text-align: center;
+    margin-top: 10%;
+    border-radius: 5px;
+    padding: 5% 0;        
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.15);
+
+    background-color: #fff;
+}
+
+.money-input-number{
+    color: #EE4367;
+}
+
+.hesabdari-container{
+    border-radius: 5px;
+    padding: 2% 0;        
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.15);
+    background-color: #fff;
+    margin-right: 5%;
+    margin-top: 1%;
+    height: 83%;
+}
+
+.hesab-btn{
+    margin-left: 0;
+    margin-right: 0;
+}
+.hesabe-karbar-btn{
+ margin-left: 30%;   
+}
+
+.hesabdari-btn{
+    border: 1px solid rgba(0, 0, 0, 0.15); 
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.table-hesabdari{
+    margin-top: -5px;
+    padding-top: 0;
+}
+
+.hesabdari-filter{
+    font-size: 80%;
+    margin-right: -2px;
+}
+
+.team-filter-dsc-container{
+    padding-right: 5%;
+  
+}
+
+.hesab-search-input{
+   
+    margin: 0;
+    width: 90%;
+}
+
+.pardakht-nashode-filter{
+    width: 100px;
+}
+
+.sanad-btn{
+ 
+    width: 200px;
+    height: 40px;
+    font-weight: 500;
+       border-radius: 10px;
+    background-color:  #EE4367;
+    color: #fff;
+  margin-left: 5%;
+    border: 0;
+   
+    box-shadow: 1px 1px rgba(136, 132, 132, 0.46);
+    font-size: 95%;
+}
+
+.hesab-tables{
+    margin-left: 2%;
+}
+
+.hesab-tables-container{
+    margin-left: 70%;
+}
+
+.elipse{
+    width: 15px;
+    margin-left: 5px;
+    margin-top: -3px;
+    
+    margin-right: -55%;
+}
+
+/************   Amaro natayej  ************/
+
+.archive-container{
+    
+     border-radius: 5px;
+    padding: 2% 0;        
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.15);
+    background-color: #fff;
+    margin-right: 5%;
+    margin-top: 1%;
+    height: 80vh;
+    
+}
+
+.archive-search-input{
+
+    width: 90%;
+    
+   
+    
+}
+.archive-search{
+    padding: 0;
+    margin: 5% ;
+}
+
+.archive-container-text{
+    text-align: center;
+    color: #EE4367;
+}
+.league-btn{
+    background-color: #fff;
+    width: 90%;
+    margin:3% 5% 2% 5%;
+    border:1px solid #707070;
+    border-radius: 5px;
+    padding: 3%;
+     outline: none;
+}
+
+.league-btn-current{
+    color: #EE4367;
+    border:1px solid #EE4367;
+    outline: none;
+    
+}
+
+.matches-btn,
+ .played-games-btn{
+    color: #EE4367;
+    border-bottom: 1px solid #EE4367;
+}
+
+
+.filter-search-section{
+        border-radius: 5px;
+    padding: 2% 0;
+    padding-bottom: 1%;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.15);
+    background-color: #fff;
+    margin-right: 0;
+    margin-top: 0.25%;
+ width: 95%;
+}
+
+.archive-filter-dsc-container{
+    padding-right: 5%;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.filter-search{
+    margin-top: -10%;
+    padding-bottom: 0;
+    margin-bottom: 0
+}
+
+.tables-section{
+        border-radius: 5px;
+    padding: 2% 0;
+    padding-bottom: 1%;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.15);
+    background-color: #fff;
+    margin-right: 0;
+    margin-top: 0.25%;
+ width: 95%;
+    height: 71vh;
+    
+}
+
+.games-button{
+     background-color: #fff;
+    width: 90%;
+    outline: none;
+    margin-left: 5%;
+    
+
+}
+
+.games-select{
+    margin-top: 5%;
+}
+
+.games-date{
+    margin-right: 10%;
+}
+
+.games{
+    margin-top: 2%;
+}
+.game{
+    
+}
+
+
+
+
+.games table td{
+    padding-right: 20px;
+    padding-top: 5%;
+}
+
+.table-section,
+archive-table-section{
+    display: none;
+}
+
+
+.match-table {
+    width: 100%;
+    border: 1px solid #000;
+    border-radius: 10px;
+    
+    margin-bottom: 5%;
+    margin-left: 1%;
+    margin-right: 1%;
+    padding: 1%;
+   
+}
+
+.match-table2{
+    margin-right: -4%;
+}
+
+.table-section table,
+.archive-table-section table{
+    width: 100%;
+}
+.table-section table td,
+.archive-table-section table td,
+.table-section table th,
+.archive-table-section table th{
+        padding-top: 1%;
+    text-align: center;
+}
+.table-section table th,
+.archive-table-section table th{
+font-weight: 200;
+    padding-left: 6px;
+  
+    
+}
+.table-section table tr,
+.archive-table-section table tr{
+    border-top: 1px solid #000;
+}
+.table-section table tr:first-child,
+.archive-table-section table tr:first-child{
+    border: 0;
+    font-weight: 500;
+    font-size: 90%;
+    
+}
+.archive-table-section{
+    display: none;
+}
+.table-section h6,
+.archive-table-section h6{
+    margin-top: 10%;
+    text-align: right;
+    margin-right: 3%;
+}
+
+played-games{display: block;}
+
+
+.main-table-section{
+    padding-top: 5%;
+}
+
+.main-table-section tr{
+    border-top: 1px solid #000;
+    
+}
+.main-table-section tr:first-child{
+    border-top: 0;
+}
+.main-table-section td,
+.main-table-section th{
+    padding-right: 3%;
+    padding-bottom: 2%;
+    text-align: center;
+}
+
+.main-table-section table{
+    width: 100%;
+}
+
+
+
+
+.league-info{
+    display: none;
+}
+
+.league-info-current{
+    display: block;
+}
+
+.main-table-section,
+.next-game{
+    display: none;
+}
+
+
+
+.users-table-list{
+    margin-top: -10px;
+}
+
+button:focus{
+    
+    outline: none;
+    
+}
+
+button{
+    font-weight: 300;
+
+ 
+}
+.team-list{
+    margin-left: 70%;
+    
+}
+
+
+/**************************/
+
+.admin .mohtava-panel{
+    
+    height: 110%;
+    
+}
+
+.list1{
+    background-color: #fff;
+    height: 110%;
+    border-radius: 5px;
+    margin-right: 50px;
+     box-shadow: 2px 2px rgba(136, 132, 132, 0.46);
+}
+
+
+.barchasb-btn{
+    margin-right: 25%;
+    width: 100px;
+}
